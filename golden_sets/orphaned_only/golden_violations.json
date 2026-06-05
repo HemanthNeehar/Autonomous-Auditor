@@ -1,0 +1,314 @@
+{
+  "pii_leaks": [],
+  "pii_integrity_failures": [],
+  "rtbf_violations": [],
+  "retention_failures": [],
+  "orphaned_records": [
+    {
+      "order_id": "ord_00001",
+      "customer_id": "non_existent_68228bcc",
+      "original_customer_id": "cust_0001",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00007",
+      "customer_id": "non_existent_3476e983",
+      "original_customer_id": "cust_0001",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00014",
+      "customer_id": "non_existent_c514c254",
+      "original_customer_id": "cust_0002",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00015",
+      "customer_id": "non_existent_55f06ba5",
+      "original_customer_id": "cust_0002",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00023",
+      "customer_id": "non_existent_4b0b686f",
+      "original_customer_id": "cust_0003",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00028",
+      "customer_id": "non_existent_a4a0fa0e",
+      "original_customer_id": "cust_0003",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00058",
+      "customer_id": "non_existent_858ac21e",
+      "original_customer_id": "cust_0006",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00072",
+      "customer_id": "non_existent_9e742c14",
+      "original_customer_id": "cust_0008",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00088",
+      "customer_id": "non_existent_26154d30",
+      "original_customer_id": "cust_0009",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00106",
+      "customer_id": "non_existent_8f3bfc37",
+      "original_customer_id": "cust_0011",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00108",
+      "customer_id": "non_existent_bd49b94b",
+      "original_customer_id": "cust_0011",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00124",
+      "customer_id": "non_existent_9be8f678",
+      "original_customer_id": "cust_0013",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00128",
+      "customer_id": "non_existent_daab6bbb",
+      "original_customer_id": "cust_0013",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00144",
+      "customer_id": "non_existent_4974a99f",
+      "original_customer_id": "cust_0015",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00175",
+      "customer_id": "non_existent_fdeb8cf4",
+      "original_customer_id": "cust_0018",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00191",
+      "customer_id": "non_existent_87f9852b",
+      "original_customer_id": "cust_0020",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00193",
+      "customer_id": "non_existent_b799e3d8",
+      "original_customer_id": "cust_0020",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00206",
+      "customer_id": "non_existent_2cdf4741",
+      "original_customer_id": "cust_0021",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00209",
+      "customer_id": "non_existent_aab48d31",
+      "original_customer_id": "cust_0021",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00212",
+      "customer_id": "non_existent_b59d1266",
+      "original_customer_id": "cust_0022",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00235",
+      "customer_id": "non_existent_af33fb79",
+      "original_customer_id": "cust_0024",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00241",
+      "customer_id": "non_existent_c416ac68",
+      "original_customer_id": "cust_0025",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00266",
+      "customer_id": "non_existent_80afe535",
+      "original_customer_id": "cust_0027",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00275",
+      "customer_id": "non_existent_3567cd0f",
+      "original_customer_id": "cust_0028",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00276",
+      "customer_id": "non_existent_05163f7c",
+      "original_customer_id": "cust_0028",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00296",
+      "customer_id": "non_existent_30fd30cf",
+      "original_customer_id": "cust_0030",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00316",
+      "customer_id": "non_existent_2b0a7054",
+      "original_customer_id": "cust_0032",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00332",
+      "customer_id": "non_existent_8c79b91b",
+      "original_customer_id": "cust_0034",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00341",
+      "customer_id": "non_existent_3f5c2031",
+      "original_customer_id": "cust_0035",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00345",
+      "customer_id": "non_existent_7fce9f32",
+      "original_customer_id": "cust_0035",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00357",
+      "customer_id": "non_existent_08ba89b1",
+      "original_customer_id": "cust_0036",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00361",
+      "customer_id": "non_existent_995bec83",
+      "original_customer_id": "cust_0037",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00381",
+      "customer_id": "non_existent_90cd4c99",
+      "original_customer_id": "cust_0039",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00384",
+      "customer_id": "non_existent_4e10efba",
+      "original_customer_id": "cust_0039",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00403",
+      "customer_id": "non_existent_b4d89ff1",
+      "original_customer_id": "cust_0041",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00404",
+      "customer_id": "non_existent_528d8a0a",
+      "original_customer_id": "cust_0041",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00406",
+      "customer_id": "non_existent_cee9df99",
+      "original_customer_id": "cust_0041",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00409",
+      "customer_id": "non_existent_7fe047f6",
+      "original_customer_id": "cust_0041",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00411",
+      "customer_id": "non_existent_3667f64e",
+      "original_customer_id": "cust_0042",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00414",
+      "customer_id": "non_existent_a78190ed",
+      "original_customer_id": "cust_0042",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00416",
+      "customer_id": "non_existent_ce01e537",
+      "original_customer_id": "cust_0042",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00421",
+      "customer_id": "non_existent_fb397e6a",
+      "original_customer_id": "cust_0043",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00427",
+      "customer_id": "non_existent_400a72f1",
+      "original_customer_id": "cust_0043",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00444",
+      "customer_id": "non_existent_796a8464",
+      "original_customer_id": "cust_0045",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00453",
+      "customer_id": "non_existent_1306c90d",
+      "original_customer_id": "cust_0046",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00457",
+      "customer_id": "non_existent_12e4a0e1",
+      "original_customer_id": "cust_0046",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00474",
+      "customer_id": "non_existent_22dcad10",
+      "original_customer_id": "cust_0048",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00476",
+      "customer_id": "non_existent_05601682",
+      "original_customer_id": "cust_0048",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00478",
+      "customer_id": "non_existent_fc015803",
+      "original_customer_id": "cust_0048",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00498",
+      "customer_id": "non_existent_e007ccc4",
+      "original_customer_id": "cust_0050",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00499",
+      "customer_id": "non_existent_827588d0",
+      "original_customer_id": "cust_0050",
+      "violation_type": "Orphaned Record"
+    }
+  ]
+}

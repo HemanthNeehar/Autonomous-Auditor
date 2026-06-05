@@ -101,6 +101,17 @@ flowchart TD
 
 ---
 
+## 📊 Test Data & Golden Datasets
+
+To support evaluations, offline dashboard runs, and testing, the project includes pre-packaged synthetic datasets:
+- **Root-Level JSONs** ([customer_db.json](file:///e:/Gen_AI_RAG/Autonomous_Auditor/src_v2/customer_db.json) and [orders_db.json](file:///e:/Gen_AI_RAG/Autonomous_Auditor/src_v2/orders_db.json)): These files serve as local, offline fallbacks for the FastAPI dashboard statistics endpoint (`/api/stats`) and are bundled with the Agent Engine deployment configuration as fallback databases.
+- **Scenario Datasets** (under `golden_sets/<scenario_name>/`): Each folder contains scenario-specific `customer_db.json` and `orders_db.json` files representing simulated transactional histories (e.g., PII leak only, RTBF violation only).
+- **Ground-Truth Violations** (`golden_sets/<scenario_name>/golden_violations.json`): Pre-defined checklists of known compliance violations. The evaluation suite ([eval/evaluate_agent.py](file:///e:/Gen_AI_RAG/Autonomous_Auditor/src_v2/eval/evaluate_agent.py)) matches the agent's audit findings against these lists to calculate passing metrics.
+
+*Note: These datasets contain entirely dummy, synthetic data and are checked in to make the regression test sweep deterministic and runnable out-of-the-box.*
+
+---
+
 ## 🚀 Quick Start Guide
 
 ### 1. Environment Setup

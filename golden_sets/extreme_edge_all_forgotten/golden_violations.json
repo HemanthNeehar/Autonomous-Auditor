@@ -1,0 +1,413 @@
+{
+  "pii_leaks": [],
+  "pii_integrity_failures": [],
+  "rtbf_violations": [
+    {
+      "customer_id": "cust_0019",
+      "order_id": "ord_00092",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0019",
+      "order_id": "ord_00093",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0019",
+      "order_id": "ord_00094",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0019",
+      "order_id": "ord_00095",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0018",
+      "order_id": "ord_00088",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0018",
+      "order_id": "ord_00089",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0018",
+      "order_id": "ord_00090",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0017",
+      "order_id": "ord_00083",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0017",
+      "order_id": "ord_00084",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0017",
+      "order_id": "ord_00085",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0007",
+      "order_id": "ord_00031",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0007",
+      "order_id": "ord_00032",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0007",
+      "order_id": "ord_00033",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0007",
+      "order_id": "ord_00034",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0007",
+      "order_id": "ord_00035",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0010",
+      "order_id": "ord_00047",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0010",
+      "order_id": "ord_00048",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0010",
+      "order_id": "ord_00049",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0010",
+      "order_id": "ord_00050",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0003",
+      "order_id": "ord_00011",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0003",
+      "order_id": "ord_00013",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0003",
+      "order_id": "ord_00015",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0011",
+      "order_id": "ord_00051",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0011",
+      "order_id": "ord_00052",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0011",
+      "order_id": "ord_00053",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0011",
+      "order_id": "ord_00055",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0004",
+      "order_id": "ord_00016",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0004",
+      "order_id": "ord_00017",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0004",
+      "order_id": "ord_00018",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0004",
+      "order_id": "ord_00019",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0004",
+      "order_id": "ord_00020",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00006",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00007",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00008",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00009",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0016",
+      "order_id": "ord_00076",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0016",
+      "order_id": "ord_00077",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0016",
+      "order_id": "ord_00078",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0016",
+      "order_id": "ord_00079",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0016",
+      "order_id": "ord_00080",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0006",
+      "order_id": "ord_00026",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0006",
+      "order_id": "ord_00027",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0006",
+      "order_id": "ord_00028",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0006",
+      "order_id": "ord_00029",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0006",
+      "order_id": "ord_00030",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0001",
+      "order_id": "ord_00001",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0001",
+      "order_id": "ord_00002",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0001",
+      "order_id": "ord_00003",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0001",
+      "order_id": "ord_00004",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0005",
+      "order_id": "ord_00023",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0005",
+      "order_id": "ord_00024",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0005",
+      "order_id": "ord_00025",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0008",
+      "order_id": "ord_00036",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0008",
+      "order_id": "ord_00037",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0008",
+      "order_id": "ord_00038",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0008",
+      "order_id": "ord_00039",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0008",
+      "order_id": "ord_00040",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0013",
+      "order_id": "ord_00061",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0013",
+      "order_id": "ord_00063",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0013",
+      "order_id": "ord_00065",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0014",
+      "order_id": "ord_00066",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0014",
+      "order_id": "ord_00068",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0014",
+      "order_id": "ord_00069",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0014",
+      "order_id": "ord_00070",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0020",
+      "order_id": "ord_00096",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0020",
+      "order_id": "ord_00097",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0020",
+      "order_id": "ord_00099",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0020",
+      "order_id": "ord_00100",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0012",
+      "order_id": "ord_00056",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0012",
+      "order_id": "ord_00058",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0012",
+      "order_id": "ord_00059",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0012",
+      "order_id": "ord_00060",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00071",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00072",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00073",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00074",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00075",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0009",
+      "order_id": "ord_00041",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0009",
+      "order_id": "ord_00042",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0009",
+      "order_id": "ord_00043",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0009",
+      "order_id": "ord_00044",
+      "violation_type": "RTBF Violation"
+    }
+  ],
+  "retention_failures": [],
+  "orphaned_records": []
+}

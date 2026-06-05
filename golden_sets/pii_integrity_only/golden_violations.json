@@ -1,0 +1,284 @@
+{
+  "pii_leaks": [],
+  "pii_integrity_failures": [
+    {
+      "order_id": "ord_00001",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00005",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00032",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00040",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00052",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00069",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00087",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00107",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00125",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00127",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00142",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00150",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00160",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00173",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00177",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00178",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00180",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00186",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00188",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00210",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00231",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00244",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00249",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00257",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00281",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00286",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00291",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00297",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00298",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00303",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00313",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00327",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00329",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00332",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00336",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00341",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00361",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00366",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00402",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00413",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00420",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00451",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00467",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00471",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00476",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00488",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    }
+  ],
+  "rtbf_violations": [],
+  "retention_failures": [],
+  "orphaned_records": []
+}

@@ -1,0 +1,500 @@
+{
+  "pii_leaks": [
+    {
+      "order_id": "ord_00005",
+      "field": "customer_email",
+      "value": "customer1@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00010",
+      "field": "customer_phone",
+      "value": "555-618-6430",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00020",
+      "field": "customer_phone",
+      "value": "555-113-8033",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00030",
+      "field": "customer_email",
+      "value": "customer3@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00034",
+      "field": "customer_email",
+      "value": "customer4@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00035",
+      "field": "customer_phone",
+      "value": "555-167-7307",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00042",
+      "field": "customer_phone",
+      "value": "555-564-5408",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00045",
+      "field": "customer_phone",
+      "value": "555-687-2165",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00047",
+      "field": "customer_email",
+      "value": "customer5@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00053",
+      "field": "customer_phone",
+      "value": "555-549-9892",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00061",
+      "field": "customer_phone",
+      "value": "555-585-7489",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00069",
+      "field": "customer_email",
+      "value": "customer7@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00070",
+      "field": "customer_email",
+      "value": "customer7@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00074",
+      "field": "customer_phone",
+      "value": "555-831-7784",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00075",
+      "field": "customer_phone",
+      "value": "555-426-4164",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00080",
+      "field": "customer_phone",
+      "value": "555-296-6014",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00087",
+      "field": "customer_phone",
+      "value": "555-665-1379",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00089",
+      "field": "customer_phone",
+      "value": "555-302-7148",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00095",
+      "field": "customer_email",
+      "value": "customer10@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00101",
+      "field": "customer_email",
+      "value": "customer11@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00108",
+      "field": "customer_phone",
+      "value": "555-212-1570",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00116",
+      "field": "customer_phone",
+      "value": "555-982-7934",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00120",
+      "field": "customer_email",
+      "value": "customer12@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00125",
+      "field": "customer_email",
+      "value": "customer13@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00131",
+      "field": "customer_email",
+      "value": "customer14@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00133",
+      "field": "customer_phone",
+      "value": "555-431-2156",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00134",
+      "field": "customer_phone",
+      "value": "555-573-4549",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00135",
+      "field": "customer_phone",
+      "value": "555-761-7521",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00136",
+      "field": "customer_phone",
+      "value": "555-827-9001",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00142",
+      "field": "customer_email",
+      "value": "customer15@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00147",
+      "field": "customer_email",
+      "value": "customer15@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00158",
+      "field": "customer_phone",
+      "value": "555-865-9608",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00169",
+      "field": "customer_phone",
+      "value": "555-915-2180",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00174",
+      "field": "customer_email",
+      "value": "customer18@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00178",
+      "field": "customer_phone",
+      "value": "555-260-6319",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00186",
+      "field": "customer_phone",
+      "value": "555-833-2068",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00192",
+      "field": "customer_phone",
+      "value": "555-455-8443",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00193",
+      "field": "customer_email",
+      "value": "customer20@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00200",
+      "field": "customer_email",
+      "value": "customer20@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00205",
+      "field": "customer_email",
+      "value": "customer21@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00218",
+      "field": "customer_phone",
+      "value": "555-363-3500",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00221",
+      "field": "customer_phone",
+      "value": "555-326-9211",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00230",
+      "field": "customer_email",
+      "value": "customer23@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00234",
+      "field": "customer_phone",
+      "value": "555-184-8188",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00243",
+      "field": "customer_phone",
+      "value": "555-951-1530",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00246",
+      "field": "customer_email",
+      "value": "customer25@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00247",
+      "field": "customer_email",
+      "value": "customer25@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00249",
+      "field": "customer_phone",
+      "value": "555-602-4729",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00260",
+      "field": "customer_email",
+      "value": "customer26@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00265",
+      "field": "customer_phone",
+      "value": "555-454-2995",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00269",
+      "field": "customer_phone",
+      "value": "555-866-1687",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00270",
+      "field": "customer_phone",
+      "value": "555-968-6984",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00272",
+      "field": "customer_email",
+      "value": "customer28@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00273",
+      "field": "customer_phone",
+      "value": "555-959-8623",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00276",
+      "field": "customer_email",
+      "value": "customer28@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00287",
+      "field": "customer_phone",
+      "value": "555-756-3054",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00289",
+      "field": "customer_phone",
+      "value": "555-134-2619",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00296",
+      "field": "customer_email",
+      "value": "customer30@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00333",
+      "field": "customer_email",
+      "value": "customer34@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00337",
+      "field": "customer_phone",
+      "value": "555-875-3861",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00339",
+      "field": "customer_phone",
+      "value": "555-964-2094",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00341",
+      "field": "customer_phone",
+      "value": "555-591-5779",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00375",
+      "field": "customer_email",
+      "value": "customer38@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00380",
+      "field": "customer_phone",
+      "value": "555-231-8328",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00383",
+      "field": "customer_email",
+      "value": "customer39@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00388",
+      "field": "customer_email",
+      "value": "customer39@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00396",
+      "field": "customer_phone",
+      "value": "555-894-8714",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00403",
+      "field": "customer_email",
+      "value": "customer41@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00417",
+      "field": "customer_phone",
+      "value": "555-674-7395",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00423",
+      "field": "customer_email",
+      "value": "customer43@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00424",
+      "field": "customer_phone",
+      "value": "555-725-9219",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00426",
+      "field": "customer_email",
+      "value": "customer43@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00431",
+      "field": "customer_email",
+      "value": "customer44@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00440",
+      "field": "customer_email",
+      "value": "customer44@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00455",
+      "field": "customer_phone",
+      "value": "555-282-4457",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00457",
+      "field": "customer_email",
+      "value": "customer46@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00458",
+      "field": "customer_email",
+      "value": "customer46@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00467",
+      "field": "customer_email",
+      "value": "customer47@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00478",
+      "field": "customer_email",
+      "value": "customer48@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00480",
+      "field": "customer_phone",
+      "value": "555-955-8441",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00496",
+      "field": "customer_phone",
+      "value": "555-124-4863",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00499",
+      "field": "customer_phone",
+      "value": "555-764-2263",
+      "violation_type": "PII Leak (Unmasked)"
+    }
+  ],
+  "pii_integrity_failures": [],
+  "rtbf_violations": [],
+  "retention_failures": [],
+  "orphaned_records": []
+}

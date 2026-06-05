@@ -1,0 +1,16 @@
+## Retail Data Handling Policy (Ver 2.0)
+
+**Section 1: Data Minimization**
+All personal identifiable information (PII) collected from customers should be strictly limited to what is necessary for fulfilling transactional obligations and providing requested services. Excess data should not be stored. Regular audits must be conducted to ensure data minimization principles are adhered to.
+
+**Section 2: Anonymization Standards**
+When data needs to be retained for analytical or historical purposes beyond its active use, it must undergo robust anonymization. This means ensuring that individuals cannot be re-identified through either direct identifiers or through correlation with other available data. Simple masking (e.g., replacing with "[MASKED]") is acceptable for operational systems, but statistical anonymization techniques (e.g., k-anonymity, differential privacy) are preferred for long-term archival datasets.
+
+**Section 3: Right to Erasure (RTBF) Procedures**
+Upon a verified request for the "Right to be Forgotten" (RTBF), all associated customer data must be permanently deleted from all active and backup systems within 30 days. Exceptions may apply for data required by law (e.g., tax records for 7 years), which must be clearly documented and justified. The customer ID associated with forgotten records must be purged from all transactional logs if not legally mandated for retention.
+
+**Section 4: Data Breach Notification**
+In the event of a data breach involving PII, affected individuals and relevant regulatory authorities must be notified within 72 hours of discovery, unless the breach is unlikely to result in a risk to the rights and freedoms of natural persons.
+
+**Section 5: Third-Party Data Sharing**
+Sharing of customer data with third parties requires explicit customer consent and must adhere to data protection agreements. Anonymized data may be shared for aggregated insights, provided re-identification risks are negligible.

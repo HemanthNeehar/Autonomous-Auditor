@@ -1,0 +1,1158 @@
+{
+  "pii_leaks": [
+    {
+      "order_id": "ord_00017",
+      "field": "customer_email",
+      "value": "customer2@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00027",
+      "field": "customer_email",
+      "value": "customer2@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00044",
+      "field": "customer_email",
+      "value": "customer3@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00069",
+      "field": "customer_phone",
+      "value": "555-586-1472",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00103",
+      "field": "customer_email",
+      "value": "customer7@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00149",
+      "field": "customer_email",
+      "value": "customer10@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00171",
+      "field": "customer_phone",
+      "value": "555-443-8309",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00208",
+      "field": "customer_email",
+      "value": "customer14@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00227",
+      "field": "customer_email",
+      "value": "customer16@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00235",
+      "field": "customer_phone",
+      "value": "555-631-1856",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00257",
+      "field": "customer_phone",
+      "value": "555-451-1856",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00278",
+      "field": "customer_email",
+      "value": "customer19@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00281",
+      "field": "customer_email",
+      "value": "customer19@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00366",
+      "field": "customer_email",
+      "value": "customer25@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00372",
+      "field": "customer_phone",
+      "value": "555-920-7196",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00374",
+      "field": "customer_phone",
+      "value": "555-618-3741",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00398",
+      "field": "customer_phone",
+      "value": "555-141-8543",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00429",
+      "field": "customer_phone",
+      "value": "555-762-6554",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00473",
+      "field": "customer_email",
+      "value": "customer32@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00517",
+      "field": "customer_phone",
+      "value": "555-350-7587",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00546",
+      "field": "customer_phone",
+      "value": "555-905-9706",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00548",
+      "field": "customer_phone",
+      "value": "555-682-6047",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00597",
+      "field": "customer_phone",
+      "value": "555-509-2803",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00621",
+      "field": "customer_phone",
+      "value": "555-204-6417",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00622",
+      "field": "customer_email",
+      "value": "customer42@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00669",
+      "field": "customer_phone",
+      "value": "555-766-8469",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00684",
+      "field": "customer_email",
+      "value": "customer46@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00711",
+      "field": "customer_email",
+      "value": "customer48@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00727",
+      "field": "customer_email",
+      "value": "customer49@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00732",
+      "field": "customer_phone",
+      "value": "555-461-2558",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00798",
+      "field": "customer_phone",
+      "value": "555-133-3042",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00812",
+      "field": "customer_email",
+      "value": "customer55@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00854",
+      "field": "customer_phone",
+      "value": "555-450-5267",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00861",
+      "field": "customer_phone",
+      "value": "555-749-1872",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00862",
+      "field": "customer_email",
+      "value": "customer58@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00880",
+      "field": "customer_phone",
+      "value": "555-902-5530",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00882",
+      "field": "customer_email",
+      "value": "customer59@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00906",
+      "field": "customer_phone",
+      "value": "555-866-3428",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00907",
+      "field": "customer_phone",
+      "value": "555-901-8054",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00918",
+      "field": "customer_email",
+      "value": "customer62@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00944",
+      "field": "customer_email",
+      "value": "customer63@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_00961",
+      "field": "customer_email",
+      "value": "customer65@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01004",
+      "field": "customer_email",
+      "value": "customer67@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01035",
+      "field": "customer_phone",
+      "value": "555-793-3601",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01062",
+      "field": "customer_phone",
+      "value": "555-574-6625",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01071",
+      "field": "customer_email",
+      "value": "customer72@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01099",
+      "field": "customer_email",
+      "value": "customer74@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01123",
+      "field": "customer_email",
+      "value": "customer75@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01126",
+      "field": "customer_email",
+      "value": "customer76@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01182",
+      "field": "customer_phone",
+      "value": "555-422-6756",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01188",
+      "field": "customer_email",
+      "value": "customer80@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01195",
+      "field": "customer_email",
+      "value": "customer80@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01268",
+      "field": "customer_phone",
+      "value": "555-911-3699",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01274",
+      "field": "customer_email",
+      "value": "customer85@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01334",
+      "field": "customer_phone",
+      "value": "555-391-8814",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01335",
+      "field": "customer_phone",
+      "value": "555-132-5079",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01390",
+      "field": "customer_email",
+      "value": "customer93@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01443",
+      "field": "customer_email",
+      "value": "customer97@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01445",
+      "field": "customer_email",
+      "value": "customer97@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01454",
+      "field": "customer_email",
+      "value": "customer97@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    },
+    {
+      "order_id": "ord_01499",
+      "field": "customer_email",
+      "value": "customer100@example.com",
+      "violation_type": "PII Leak (Unmasked)"
+    }
+  ],
+  "pii_integrity_failures": [
+    {
+      "order_id": "ord_00052",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00093",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00095",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00115",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00127",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00152",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00231",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00308",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00336",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00340",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00387",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00396",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00415",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00443",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00472",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00659",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00709",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00753",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00867",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00883",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00894",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00915",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00926",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00934",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00968",
+      "field": "customer_email",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00979",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_00998",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01014",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01140",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01178",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01224",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01248",
+      "field": "customer_phone",
+      "value": "N/A",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01262",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01270",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01340",
+      "field": "customer_phone",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01405",
+      "field": "customer_email",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01410",
+      "field": "customer_email",
+      "value": "ERROR",
+      "violation_type": "PII Integrity Failure"
+    },
+    {
+      "order_id": "ord_01417",
+      "field": "customer_phone",
+      "value": "NULL",
+      "violation_type": "PII Integrity Failure"
+    }
+  ],
+  "rtbf_violations": [
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00932",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00933",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00934",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00935",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00936",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00937",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00939",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00940",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00942",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00943",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00944",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0063",
+      "order_id": "ord_00945",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00211",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00212",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00213",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00214",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00215",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00217",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00218",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00220",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00221",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00222",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00224",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0015",
+      "order_id": "ord_00225",
+      "violation_type": "RTBF Violation"
+    }
+  ],
+  "retention_failures": [
+    {
+      "order_id": "ord_00130",
+      "customer_id": "cust_0009",
+      "order_date": "2016-03-22",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00162",
+      "customer_id": "cust_0011",
+      "order_date": "2014-07-13",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00165",
+      "customer_id": "cust_0011",
+      "order_date": "2014-10-28",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00214",
+      "customer_id": "cust_0015",
+      "order_date": "2015-11-04",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00272",
+      "customer_id": "cust_0019",
+      "order_date": "2014-12-04",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00290",
+      "customer_id": "cust_0020",
+      "order_date": "2014-04-22",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00303",
+      "customer_id": "cust_0021",
+      "order_date": "2015-05-16",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00318",
+      "customer_id": "cust_0022",
+      "order_date": "2013-11-10",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00330",
+      "customer_id": "cust_0022",
+      "order_date": "2016-03-22",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00335",
+      "customer_id": "cust_0023",
+      "order_date": "2014-02-20",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00370",
+      "customer_id": "cust_0025",
+      "order_date": "2015-09-24",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00434",
+      "customer_id": "cust_0029",
+      "order_date": "2014-06-23",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00442",
+      "customer_id": "cust_0030",
+      "order_date": "2014-03-11",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00507",
+      "customer_id": "cust_0034",
+      "order_date": "2015-04-21",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00543",
+      "customer_id": "cust_0037",
+      "order_date": "2015-09-03",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00579",
+      "customer_id": "cust_0039",
+      "order_date": "2014-07-14",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00683",
+      "customer_id": "cust_0046",
+      "order_date": "2014-11-25",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00738",
+      "customer_id": "cust_0050",
+      "order_date": "2015-03-06",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00812",
+      "customer_id": "cust_0055",
+      "order_date": "2015-07-17",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00858",
+      "customer_id": "cust_0058",
+      "order_date": "2014-10-13",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00859",
+      "customer_id": "cust_0058",
+      "order_date": "2015-01-23",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00892",
+      "customer_id": "cust_0060",
+      "order_date": "2015-03-04",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00958",
+      "customer_id": "cust_0064",
+      "order_date": "2015-02-26",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01023",
+      "customer_id": "cust_0069",
+      "order_date": "2014-11-05",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01048",
+      "customer_id": "cust_0070",
+      "order_date": "2015-02-05",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01061",
+      "customer_id": "cust_0071",
+      "order_date": "2013-11-29",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01080",
+      "customer_id": "cust_0072",
+      "order_date": "2015-08-07",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01156",
+      "customer_id": "cust_0078",
+      "order_date": "2014-08-22",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01193",
+      "customer_id": "cust_0080",
+      "order_date": "2014-08-29",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01209",
+      "customer_id": "cust_0081",
+      "order_date": "2014-12-19",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01277",
+      "customer_id": "cust_0086",
+      "order_date": "2015-10-07",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01301",
+      "customer_id": "cust_0087",
+      "order_date": "2015-05-05",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01337",
+      "customer_id": "cust_0090",
+      "order_date": "2016-04-21",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_01498",
+      "customer_id": "cust_0100",
+      "order_date": "2013-10-24",
+      "violation_type": "Data Retention Failure"
+    }
+  ],
+  "orphaned_records": [
+    {
+      "order_id": "ord_00030",
+      "customer_id": "non_existent_485d38c5",
+      "original_customer_id": "cust_0002",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00088",
+      "customer_id": "non_existent_54425eb6",
+      "original_customer_id": "cust_0006",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00100",
+      "customer_id": "non_existent_60f03f5c",
+      "original_customer_id": "cust_0007",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00115",
+      "customer_id": "non_existent_236ed804",
+      "original_customer_id": "cust_0008",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00124",
+      "customer_id": "non_existent_b516a820",
+      "original_customer_id": "cust_0009",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00150",
+      "customer_id": "non_existent_d3bdb60b",
+      "original_customer_id": "cust_0010",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00203",
+      "customer_id": "non_existent_3425b26f",
+      "original_customer_id": "cust_0014",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00285",
+      "customer_id": "non_existent_e9a36640",
+      "original_customer_id": "cust_0019",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00303",
+      "customer_id": "non_existent_c1db67d1",
+      "original_customer_id": "cust_0021",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00338",
+      "customer_id": "non_existent_1e938b5c",
+      "original_customer_id": "cust_0023",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00443",
+      "customer_id": "non_existent_3509237f",
+      "original_customer_id": "cust_0030",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00451",
+      "customer_id": "non_existent_968e7ed0",
+      "original_customer_id": "cust_0031",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00607",
+      "customer_id": "non_existent_bc4fa55d",
+      "original_customer_id": "cust_0041",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00651",
+      "customer_id": "non_existent_a1084013",
+      "original_customer_id": "cust_0044",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00705",
+      "customer_id": "non_existent_2cd9c61e",
+      "original_customer_id": "cust_0047",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00733",
+      "customer_id": "non_existent_64f8f2c0",
+      "original_customer_id": "cust_0049",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00756",
+      "customer_id": "non_existent_5371e96a",
+      "original_customer_id": "cust_0051",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00758",
+      "customer_id": "non_existent_565f2123",
+      "original_customer_id": "cust_0051",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00797",
+      "customer_id": "non_existent_3b0807da",
+      "original_customer_id": "cust_0054",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00819",
+      "customer_id": "non_existent_6ffbdb0e",
+      "original_customer_id": "cust_0055",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00865",
+      "customer_id": "non_existent_18996664",
+      "original_customer_id": "cust_0058",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00872",
+      "customer_id": "non_existent_9410bfdb",
+      "original_customer_id": "cust_0059",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00886",
+      "customer_id": "non_existent_0d2abc28",
+      "original_customer_id": "cust_0060",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00889",
+      "customer_id": "non_existent_0183874f",
+      "original_customer_id": "cust_0060",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00904",
+      "customer_id": "non_existent_5c27d78c",
+      "original_customer_id": "cust_0061",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00956",
+      "customer_id": "non_existent_a18fbd1d",
+      "original_customer_id": "cust_0064",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_00993",
+      "customer_id": "non_existent_53d47333",
+      "original_customer_id": "cust_0067",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01019",
+      "customer_id": "non_existent_528d579b",
+      "original_customer_id": "cust_0068",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01098",
+      "customer_id": "non_existent_6085db7c",
+      "original_customer_id": "cust_0074",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01109",
+      "customer_id": "non_existent_4ee68800",
+      "original_customer_id": "cust_0074",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01126",
+      "customer_id": "non_existent_240dfa57",
+      "original_customer_id": "cust_0076",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01138",
+      "customer_id": "non_existent_49771e31",
+      "original_customer_id": "cust_0076",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01152",
+      "customer_id": "non_existent_82bc0df0",
+      "original_customer_id": "cust_0077",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01183",
+      "customer_id": "non_existent_6c28ef7f",
+      "original_customer_id": "cust_0079",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01238",
+      "customer_id": "non_existent_52a24ed9",
+      "original_customer_id": "cust_0083",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01340",
+      "customer_id": "non_existent_a82ab20f",
+      "original_customer_id": "cust_0090",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01356",
+      "customer_id": "non_existent_b1166579",
+      "original_customer_id": "cust_0091",
+      "violation_type": "Orphaned Record"
+    },
+    {
+      "order_id": "ord_01399",
+      "customer_id": "non_existent_eaa17276",
+      "original_customer_id": "cust_0094",
+      "violation_type": "Orphaned Record"
+    }
+  ]
+}

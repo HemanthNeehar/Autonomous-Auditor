@@ -1,0 +1,302 @@
+[
+  {
+    "customer_id": "cust_0001",
+    "name": "Customer 1",
+    "email": "customer1@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0002",
+    "name": "Customer 2",
+    "email": "customer2@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0003",
+    "name": "Customer 3",
+    "email": "customer3@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0004",
+    "name": "Customer 4",
+    "email": "customer4@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0005",
+    "name": "Customer 5",
+    "email": "customer5@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0006",
+    "name": "Customer 6",
+    "email": "customer6@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0007",
+    "name": "Customer 7",
+    "email": "customer7@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0008",
+    "name": "Customer 8",
+    "email": "customer8@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0009",
+    "name": "Customer 9",
+    "email": "customer9@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0010",
+    "name": "Customer 10",
+    "email": "customer10@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0011",
+    "name": "Customer 11",
+    "email": "customer11@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0012",
+    "name": "Customer 12",
+    "email": "customer12@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0013",
+    "name": "Customer 13",
+    "email": "customer13@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0014",
+    "name": "Customer 14",
+    "email": "customer14@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0015",
+    "name": "Customer 15",
+    "email": "customer15@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0016",
+    "name": "Customer 16",
+    "email": "customer16@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0017",
+    "name": "Customer 17",
+    "email": "customer17@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0018",
+    "name": "Customer 18",
+    "email": "customer18@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0019",
+    "name": "Customer 19",
+    "email": "customer19@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0020",
+    "name": "Customer 20",
+    "email": "customer20@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0021",
+    "name": "Customer 21",
+    "email": "customer21@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0022",
+    "name": "Customer 22",
+    "email": "customer22@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0023",
+    "name": "Customer 23",
+    "email": "customer23@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0024",
+    "name": "Customer 24",
+    "email": "customer24@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0025",
+    "name": "Customer 25",
+    "email": "customer25@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0026",
+    "name": "Customer 26",
+    "email": "customer26@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0027",
+    "name": "Customer 27",
+    "email": "customer27@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0028",
+    "name": "Customer 28",
+    "email": "customer28@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0029",
+    "name": "Customer 29",
+    "email": "customer29@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0030",
+    "name": "Customer 30",
+    "email": "customer30@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0031",
+    "name": "Customer 31",
+    "email": "customer31@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0032",
+    "name": "Customer 32",
+    "email": "customer32@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0033",
+    "name": "Customer 33",
+    "email": "customer33@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0034",
+    "name": "Customer 34",
+    "email": "customer34@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0035",
+    "name": "Customer 35",
+    "email": "customer35@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0036",
+    "name": "Customer 36",
+    "email": "customer36@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0037",
+    "name": "Customer 37",
+    "email": "customer37@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0038",
+    "name": "Customer 38",
+    "email": "customer38@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0039",
+    "name": "Customer 39",
+    "email": "customer39@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0040",
+    "name": "Customer 40",
+    "email": "customer40@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0041",
+    "name": "Customer 41",
+    "email": "customer41@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0042",
+    "name": "Customer 42",
+    "email": "customer42@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0043",
+    "name": "Customer 43",
+    "email": "customer43@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0044",
+    "name": "Customer 44",
+    "email": "customer44@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0045",
+    "name": "Customer 45",
+    "email": "customer45@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0046",
+    "name": "Customer 46",
+    "email": "customer46@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0047",
+    "name": "Customer 47",
+    "email": "customer47@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0048",
+    "name": "Customer 48",
+    "email": "customer48@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0049",
+    "name": "Customer 49",
+    "email": "customer49@example.com",
+    "status": "active"
+  },
+  {
+    "customer_id": "cust_0050",
+    "name": "Customer 50",
+    "email": "customer50@example.com",
+    "status": "active"
+  }
+]

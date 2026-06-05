@@ -1,0 +1,16 @@
+{
+  "eval_config": {
+    "criteria": {
+      "hallucinations_v1": {
+        "threshold": 0.5,
+        "evaluate_intermediate_nl_responses": true
+      },
+      "safety_v1": {
+        "threshold": 0.8
+      }
+    }
+  },
+  "app_name": "src_v2",
+  "train_eval_set": "set_with_conversation_scenarios",
+  "validation_eval_set": "set_with_conversation_scenarios"
+}

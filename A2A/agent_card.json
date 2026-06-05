@@ -1,0 +1,23 @@
+{
+  "protocol_version": "0.3.0",
+  "name": "autonomous_auditor",
+  "version": "1.0.0",
+  "description": "Performs a thorough 5-point data integrity, RTBF, PII leak, and data retention audit on B2B retail databases.",
+  "url": "http://localhost:8000",
+  "capabilities": {
+    "extensions": null,
+    "push_notifications": null,
+    "state_transition_history": null,
+    "streaming": false
+  },
+  "default_input_modes": ["text"],
+  "default_output_modes": ["text"],
+  "skills": [
+    {
+      "id": "compliance_audit",
+      "name": "Autonomous Compliance Audit",
+      "description": "Scans customer and order compliance tables to identify PII leaks, Right to be Forgotten violations, Relational Orphans, and Data Retention failures.",
+      "tags": ["audit", "compliance", "B2B", "GDPR", "CCPA"]
+    }
+  ]
+}

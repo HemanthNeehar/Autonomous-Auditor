@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "starting_prompt": "Please perform a comprehensive 5-point compliance audit of the retail database.",
+      "conversation_plan": "Instruct the agent to check all compliance tables (customers and orders) for any violations. Ask the agent to break down if it found any PII leaks, PII integrity issues, RTBF violations, data retention policy violations, or orphaned records. Once it confirms that the data is clean and has zero violations, ask it to synthesize a final report. Conclude the conversation by thanking the agent.",
+      "user_persona": "EXPERT"
+    },
+    {
+      "starting_prompt": "Perform a compliance audit. Show me any PII leaks immediately!",
+      "conversation_plan": "Demand that the agent immediately identify any unmasked customer emails or phone numbers in the orders table. If the agent finds PII leaks, ask it to list the leaked values and the exact order IDs. Ask the agent how to fix these leaks immediately. Request a final synthesized report focused strictly on the PII violations before ending the session.",
+      "user_persona": "EVALUATOR"
+    },
+    {
+      "starting_prompt": "How do I run a data retention audit? Can you check that for me?",
+      "conversation_plan": "Ask the agent to check if we are keeping old order records that are older than 10 years without anonymizing them. If there are violations, ask what 'ANONYMIZED' status means and why they were not anonymized. Have the agent explain it in simple terms and summarize the old order IDs. End the session by asking for a structured report.",
+      "user_persona": "NOVICE"
+    },
+    {
+      "starting_prompt": "We need to verify RTBF compliance. Please scan the customer and order tables for any violations.",
+      "conversation_plan": "Direct the agent to scan active order tables for any orders placed by customers whose status is set to 'forgotten'. Ask the agent to list the forgotten customer IDs and all associated order IDs that represent violations. Ask the agent how it ran the check and request a final compliance summary.",
+      "user_persona": "EVALUATOR"
+    },
+    {
+      "starting_prompt": "I suspect there are relational integrity issues. Let's scan for orphaned orders.",
+      "conversation_plan": "Instruct the agent to look for orders with customer IDs that do not exist in the customer table. Ask the agent to list the non-existent customer IDs and matching order IDs. Challenge the agent to verify if these are true orphans or if there is a mismatch. Ask for a full synthesis report before completing the audit.",
+      "user_persona": "EVALUATOR"
+    },
+    {
+      "starting_prompt": "Let's perform a stress-test audit on a heavily corrupted mixed violations dataset.",
+      "conversation_plan": "Ask the agent to run its full pipeline. Inquire about every category of violation: PII leaks, PII integrity failures, RTBF, data retention, and orphaned orders. Ask the agent to summarize the counts for each type of violation, then ask for a combined report and a mitigation recommendation.",
+      "user_persona": "EXPERT"
+    },
+    {
+      "starting_prompt": "Alert: We are conducting an audit where we suspect ALL customer accounts have been requested to be forgotten. Scan the database status.",
+      "conversation_plan": "Tell the agent to scan active customer statuses. Once the agent identifies that 100% of customer accounts are 'forgotten', ask the agent to list all active orders in the orders table that have not been anonymized or deleted. Guide the agent to output the total count of RTBF violations and draft a compliance warning.",
+      "user_persona": "EVALUATOR"
+    },
+    {
+      "starting_prompt": "Run an audit on the orphaned records database, I believe database corruption has orphaned a massive number of orders.",
+      "conversation_plan": "Ask the agent to check the order database. Probe the agent on why so many orders are referencing missing customer IDs. Ask it to list a subset of orphaned order IDs and suggest steps for database recovery. Request a final concluding report.",
+      "user_persona": "NOVICE"
+    }
+  ]
+}

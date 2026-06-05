@@ -1,0 +1,122 @@
+{
+  "pii_leaks": [],
+  "pii_integrity_failures": [],
+  "rtbf_violations": [],
+  "retention_failures": [
+    {
+      "order_id": "ord_00006",
+      "customer_id": "cust_0002",
+      "order_date": "2015-05-27",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00008",
+      "customer_id": "cust_0002",
+      "order_date": "2014-05-09",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00020",
+      "customer_id": "cust_0004",
+      "order_date": "2013-09-02",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00027",
+      "customer_id": "cust_0006",
+      "order_date": "2014-12-10",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00029",
+      "customer_id": "cust_0006",
+      "order_date": "2015-08-28",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00031",
+      "customer_id": "cust_0007",
+      "order_date": "2016-01-24",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00043",
+      "customer_id": "cust_0009",
+      "order_date": "2015-12-06",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00047",
+      "customer_id": "cust_0010",
+      "order_date": "2015-11-26",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00051",
+      "customer_id": "cust_0011",
+      "order_date": "2014-09-08",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00055",
+      "customer_id": "cust_0011",
+      "order_date": "2015-01-03",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00062",
+      "customer_id": "cust_0013",
+      "order_date": "2015-07-21",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00063",
+      "customer_id": "cust_0013",
+      "order_date": "2013-11-21",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00071",
+      "customer_id": "cust_0015",
+      "order_date": "2014-08-05",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00077",
+      "customer_id": "cust_0016",
+      "order_date": "2013-12-07",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00078",
+      "customer_id": "cust_0016",
+      "order_date": "2014-12-13",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00083",
+      "customer_id": "cust_0017",
+      "order_date": "2014-07-10",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00096",
+      "customer_id": "cust_0020",
+      "order_date": "2016-03-01",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00098",
+      "customer_id": "cust_0020",
+      "order_date": "2014-03-10",
+      "violation_type": "Data Retention Failure"
+    },
+    {
+      "order_id": "ord_00100",
+      "customer_id": "cust_0020",
+      "order_date": "2015-12-03",
+      "violation_type": "Data Retention Failure"
+    }
+  ],
+  "orphaned_records": []
+}

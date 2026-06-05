@@ -1,0 +1,57 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ai-agents-adk"
+version = "1.0.0"
+description = "AI Agents - Google For Startups Challenge"
+authors = ["Hemanth Gadavajhala"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<=3.14"
+
+# Web framework
+fastapi = "^0.124.1"
+uvicorn = {extras = ["standard"], version = "^0.46.0"}
+httpx = "^0.28.1"
+pydantic = "^2.12.5"
+pydantic-settings = "^2.12.0"
+python-dotenv = "^1.2.2"
+
+# Google Cloud
+google-genai = "^1.70.0"
+google-auth-oauthlib = "^1.3.1"
+google-adk = { version = "^2.1.0", extras = ["a2a","agent-identity", "eval"] }
+google-cloud-aiplatform = { version = "^1.153.1", extras = ["agent_engines", "evaluation"] }
+toolbox-core = "1.0.0"
+toolbox-adk = "1.0.0"
+google-cloud-bigquery = "^3.41.0"
+google-cloud-discoveryengine = "^0.13.12"
+pypdf = "^6.12.1"
+a2a-sdk = { version = "0.3.26", extras = ["http-server"] }
+
+# General
+uv = "^0.9.5" 
+pipx = "^1.2.2"
+fire = "^0.7.1"
+mcp = "^1.27.0"
+lxml = "^6.1.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=. --cov-report=term-missing --cov-report=xml"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true

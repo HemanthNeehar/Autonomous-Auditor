@@ -1,0 +1,74 @@
+# === Virtual Environments ===
+agent_env/
+demo_env/
+venv/
+.venv/
+env/
+lib/
+lib64/
+bin/
+include/
+share/
+
+# === Environment Configuration ===
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# === Personal Reference Guides & Temp Configs ===
+A2A/demo_pitch_script.md
+A2A/submission_description.md
+walkthrough.md
+USER_SIM_GUIDE.md
+config/tools.yaml
+
+# === Python Cache & Artifacts ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === IDE & Text Editor Cache ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === ADK Cache & Temporary Metadata ===
+.adk/
+optimize/runs/
+*.log
+task-*.log
+
+# === Data & Test Dumps ===
+data/compliance_downloads/*
+!golden_sets/
+!golden_sets/**
+*.db
+*.sqlite3
+sources.txt

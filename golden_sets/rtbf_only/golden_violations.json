@@ -1,0 +1,73 @@
+{
+  "pii_leaks": [],
+  "pii_integrity_failures": [],
+  "rtbf_violations": [
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00012",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00013",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00014",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00016",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00019",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0002",
+      "order_id": "ord_00020",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00473",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00474",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00476",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00477",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00478",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00479",
+      "violation_type": "RTBF Violation"
+    },
+    {
+      "customer_id": "cust_0048",
+      "order_id": "ord_00480",
+      "violation_type": "RTBF Violation"
+    }
+  ],
+  "retention_failures": [],
+  "orphaned_records": []
+}

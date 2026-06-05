@@ -1,0 +1,4502 @@
+[
+  {
+    "order_id": "ord_00001",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-09-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 128.53
+  },
+  {
+    "order_id": "ord_00002",
+    "customer_id": "cust_0001",
+    "order_date": "2026-02-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 470.78
+  },
+  {
+    "order_id": "ord_00003",
+    "customer_id": "cust_0001",
+    "order_date": "2020-07-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 172.8
+  },
+  {
+    "order_id": "ord_00004",
+    "customer_id": "cust_0001",
+    "order_date": "2020-05-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 250.49
+  },
+  {
+    "order_id": "ord_00005",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-01-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 209.73
+  },
+  {
+    "order_id": "ord_00006",
+    "customer_id": "cust_0001",
+    "order_date": "2017-04-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 359.62
+  },
+  {
+    "order_id": "ord_00007",
+    "customer_id": "cust_0001",
+    "order_date": "2025-11-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 86.65
+  },
+  {
+    "order_id": "ord_00008",
+    "customer_id": "cust_0001",
+    "order_date": "2017-05-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 470.35
+  },
+  {
+    "order_id": "ord_00009",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-05-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 456.75
+  },
+  {
+    "order_id": "ord_00010",
+    "customer_id": "cust_0001",
+    "order_date": "2020-10-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 215.52
+  },
+  {
+    "order_id": "ord_00011",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-01-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 175.88
+  },
+  {
+    "order_id": "ord_00012",
+    "customer_id": "cust_0002",
+    "order_date": "2021-04-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 485.49
+  },
+  {
+    "order_id": "ord_00013",
+    "customer_id": "cust_0002",
+    "order_date": "2023-12-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 42.05
+  },
+  {
+    "order_id": "ord_00014",
+    "customer_id": "cust_0002",
+    "order_date": "2023-12-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 13.51
+  },
+  {
+    "order_id": "ord_00015",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 485.15
+  },
+  {
+    "order_id": "ord_00016",
+    "customer_id": "cust_0002",
+    "order_date": "2024-08-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 29.36
+  },
+  {
+    "order_id": "ord_00017",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-03-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 335.68
+  },
+  {
+    "order_id": "ord_00018",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-12-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 49.27
+  },
+  {
+    "order_id": "ord_00019",
+    "customer_id": "cust_0002",
+    "order_date": "2019-04-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 385.37
+  },
+  {
+    "order_id": "ord_00020",
+    "customer_id": "cust_0002",
+    "order_date": "2016-11-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 21.84
+  },
+  {
+    "order_id": "ord_00021",
+    "customer_id": "cust_0003",
+    "order_date": "2016-11-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 176.86
+  },
+  {
+    "order_id": "ord_00022",
+    "customer_id": "cust_0003",
+    "order_date": "2023-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 242.39
+  },
+  {
+    "order_id": "ord_00023",
+    "customer_id": "cust_0003",
+    "order_date": "2020-06-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 454.97
+  },
+  {
+    "order_id": "ord_00024",
+    "customer_id": "cust_0003",
+    "order_date": "2025-08-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 344.41
+  },
+  {
+    "order_id": "ord_00025",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-08-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 411.82
+  },
+  {
+    "order_id": "ord_00026",
+    "customer_id": "cust_0003",
+    "order_date": "2021-09-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 440.27
+  },
+  {
+    "order_id": "ord_00027",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-08-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 363.91
+  },
+  {
+    "order_id": "ord_00028",
+    "customer_id": "cust_0003",
+    "order_date": "2016-05-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 353.76
+  },
+  {
+    "order_id": "ord_00029",
+    "customer_id": "cust_0003",
+    "order_date": "2018-08-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 384.01
+  },
+  {
+    "order_id": "ord_00030",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 130.54
+  },
+  {
+    "order_id": "ord_00031",
+    "customer_id": "cust_0004",
+    "order_date": "2022-04-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 232.09
+  },
+  {
+    "order_id": "ord_00032",
+    "customer_id": "cust_0004",
+    "order_date": "2019-12-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 484.68
+  },
+  {
+    "order_id": "ord_00033",
+    "customer_id": "cust_0004",
+    "order_date": "2021-07-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 297.96
+  },
+  {
+    "order_id": "ord_00034",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-11-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 416.42
+  },
+  {
+    "order_id": "ord_00035",
+    "customer_id": "cust_0004",
+    "order_date": "2024-01-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 98.96
+  },
+  {
+    "order_id": "ord_00036",
+    "customer_id": "cust_0004",
+    "order_date": "2023-02-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 397.8
+  },
+  {
+    "order_id": "ord_00037",
+    "customer_id": "cust_0004",
+    "order_date": "2022-05-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 162.97
+  },
+  {
+    "order_id": "ord_00038",
+    "customer_id": "cust_0004",
+    "order_date": "2026-05-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 349.68
+  },
+  {
+    "order_id": "ord_00039",
+    "customer_id": "cust_0004",
+    "order_date": "2017-10-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 297.99
+  },
+  {
+    "order_id": "ord_00040",
+    "customer_id": "cust_0004",
+    "order_date": "2016-11-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 427.9
+  },
+  {
+    "order_id": "ord_00041",
+    "customer_id": "cust_0005",
+    "order_date": "2024-02-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 79.18
+  },
+  {
+    "order_id": "ord_00042",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 473.18
+  },
+  {
+    "order_id": "ord_00043",
+    "customer_id": "cust_0005",
+    "order_date": "2018-07-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 378.07
+  },
+  {
+    "order_id": "ord_00044",
+    "customer_id": "cust_0005",
+    "order_date": "2023-05-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 249.43
+  },
+  {
+    "order_id": "ord_00045",
+    "customer_id": "cust_0005",
+    "order_date": "2020-05-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 366.22
+  },
+  {
+    "order_id": "ord_00046",
+    "customer_id": "cust_0005",
+    "order_date": "2026-05-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 144.77
+  },
+  {
+    "order_id": "ord_00047",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-05-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 268.18
+  },
+  {
+    "order_id": "ord_00048",
+    "customer_id": "cust_0005",
+    "order_date": "2019-05-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 341.02
+  },
+  {
+    "order_id": "ord_00049",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-12-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 417.04
+  },
+  {
+    "order_id": "ord_00050",
+    "customer_id": "cust_0005",
+    "order_date": "2020-08-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 428.16
+  },
+  {
+    "order_id": "ord_00051",
+    "customer_id": "cust_0006",
+    "order_date": "2018-01-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 190.91
+  },
+  {
+    "order_id": "ord_00052",
+    "customer_id": "cust_0006",
+    "order_date": "2019-07-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 32.82
+  },
+  {
+    "order_id": "ord_00053",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-02-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 190.12
+  },
+  {
+    "order_id": "ord_00054",
+    "customer_id": "cust_0006",
+    "order_date": "2024-06-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 49.79
+  },
+  {
+    "order_id": "ord_00055",
+    "customer_id": "cust_0006",
+    "order_date": "2023-04-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 296.27
+  },
+  {
+    "order_id": "ord_00056",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-03-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 477.78
+  },
+  {
+    "order_id": "ord_00057",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-10-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 481.98
+  },
+  {
+    "order_id": "ord_00058",
+    "customer_id": "cust_0006",
+    "order_date": "2026-02-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 492.98
+  },
+  {
+    "order_id": "ord_00059",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-11-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 242.84
+  },
+  {
+    "order_id": "ord_00060",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 441.07
+  },
+  {
+    "order_id": "ord_00061",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-10-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 434.75
+  },
+  {
+    "order_id": "ord_00062",
+    "customer_id": "cust_0007",
+    "order_date": "2018-12-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 466.13
+  },
+  {
+    "order_id": "ord_00063",
+    "customer_id": "cust_0007",
+    "order_date": "2016-06-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 270.75
+  },
+  {
+    "order_id": "ord_00064",
+    "customer_id": "cust_0007",
+    "order_date": "2023-04-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 235.33
+  },
+  {
+    "order_id": "ord_00065",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-07-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 292.87
+  },
+  {
+    "order_id": "ord_00066",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-07-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 425.34
+  },
+  {
+    "order_id": "ord_00067",
+    "customer_id": "cust_0007",
+    "order_date": "2024-11-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 292.18
+  },
+  {
+    "order_id": "ord_00068",
+    "customer_id": "cust_0007",
+    "order_date": "2026-05-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 277.11
+  },
+  {
+    "order_id": "ord_00069",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-11-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 40.77
+  },
+  {
+    "order_id": "ord_00070",
+    "customer_id": "cust_0007",
+    "order_date": "2023-05-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 352.46
+  },
+  {
+    "order_id": "ord_00071",
+    "customer_id": "cust_0008",
+    "order_date": "2023-08-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 266.55
+  },
+  {
+    "order_id": "ord_00072",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-04-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 467.17
+  },
+  {
+    "order_id": "ord_00073",
+    "customer_id": "cust_0008",
+    "order_date": "2017-09-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 241.24
+  },
+  {
+    "order_id": "ord_00074",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-01-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 360.54
+  },
+  {
+    "order_id": "ord_00075",
+    "customer_id": "cust_0008",
+    "order_date": "2021-11-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 228.97
+  },
+  {
+    "order_id": "ord_00076",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-12-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 469.07
+  },
+  {
+    "order_id": "ord_00077",
+    "customer_id": "cust_0008",
+    "order_date": "2025-03-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 362.62
+  },
+  {
+    "order_id": "ord_00078",
+    "customer_id": "cust_0008",
+    "order_date": "2023-07-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 35.89
+  },
+  {
+    "order_id": "ord_00079",
+    "customer_id": "cust_0008",
+    "order_date": "2017-04-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 288.2
+  },
+  {
+    "order_id": "ord_00080",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 120.88
+  },
+  {
+    "order_id": "ord_00081",
+    "customer_id": "cust_0009",
+    "order_date": "2018-02-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 440.7
+  },
+  {
+    "order_id": "ord_00082",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-06-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 485.45
+  },
+  {
+    "order_id": "ord_00083",
+    "customer_id": "cust_0009",
+    "order_date": "2020-12-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 442.08
+  },
+  {
+    "order_id": "ord_00084",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-02-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 158.85
+  },
+  {
+    "order_id": "ord_00085",
+    "customer_id": "cust_0009",
+    "order_date": "2018-11-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 272.74
+  },
+  {
+    "order_id": "ord_00086",
+    "customer_id": "cust_0009",
+    "order_date": "2022-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 467.26
+  },
+  {
+    "order_id": "ord_00087",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 241.27
+  },
+  {
+    "order_id": "ord_00088",
+    "customer_id": "cust_0009",
+    "order_date": "2024-10-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 309.16
+  },
+  {
+    "order_id": "ord_00089",
+    "customer_id": "cust_0009",
+    "order_date": "2017-12-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 462.78
+  },
+  {
+    "order_id": "ord_00090",
+    "customer_id": "cust_0009",
+    "order_date": "2022-11-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 107.93
+  },
+  {
+    "order_id": "ord_00091",
+    "customer_id": "cust_0010",
+    "order_date": "2024-01-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 30.41
+  },
+  {
+    "order_id": "ord_00092",
+    "customer_id": "cust_0010",
+    "order_date": "2017-01-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 458.0
+  },
+  {
+    "order_id": "ord_00093",
+    "customer_id": "cust_0010",
+    "order_date": "2021-12-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 440.66
+  },
+  {
+    "order_id": "ord_00094",
+    "customer_id": "cust_0010",
+    "order_date": "2021-02-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 123.91
+  },
+  {
+    "order_id": "ord_00095",
+    "customer_id": "cust_0010",
+    "order_date": "2020-11-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 247.67
+  },
+  {
+    "order_id": "ord_00096",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-07-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 13.31
+  },
+  {
+    "order_id": "ord_00097",
+    "customer_id": "cust_0010",
+    "order_date": "2025-02-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 478.9
+  },
+  {
+    "order_id": "ord_00098",
+    "customer_id": "cust_0010",
+    "order_date": "2024-07-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 330.45
+  },
+  {
+    "order_id": "ord_00099",
+    "customer_id": "cust_0010",
+    "order_date": "2026-01-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 358.81
+  },
+  {
+    "order_id": "ord_00100",
+    "customer_id": "cust_0010",
+    "order_date": "2023-04-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 485.5
+  },
+  {
+    "order_id": "ord_00101",
+    "customer_id": "cust_0011",
+    "order_date": "2021-09-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 120.61
+  },
+  {
+    "order_id": "ord_00102",
+    "customer_id": "cust_0011",
+    "order_date": "2021-11-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 450.92
+  },
+  {
+    "order_id": "ord_00103",
+    "customer_id": "cust_0011",
+    "order_date": "2021-06-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 44.32
+  },
+  {
+    "order_id": "ord_00104",
+    "customer_id": "cust_0011",
+    "order_date": "2019-04-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 376.81
+  },
+  {
+    "order_id": "ord_00105",
+    "customer_id": "cust_0011",
+    "order_date": "2025-02-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 298.95
+  },
+  {
+    "order_id": "ord_00106",
+    "customer_id": "cust_0011",
+    "order_date": "2022-08-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 319.62
+  },
+  {
+    "order_id": "ord_00107",
+    "customer_id": "cust_0011",
+    "order_date": "2016-07-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 203.67
+  },
+  {
+    "order_id": "ord_00108",
+    "customer_id": "cust_0011",
+    "order_date": "2024-12-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 389.2
+  },
+  {
+    "order_id": "ord_00109",
+    "customer_id": "cust_0011",
+    "order_date": "2018-11-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 266.51
+  },
+  {
+    "order_id": "ord_00110",
+    "customer_id": "cust_0011",
+    "order_date": "2026-02-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 304.8
+  },
+  {
+    "order_id": "ord_00111",
+    "customer_id": "cust_0012",
+    "order_date": "2024-07-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 464.3
+  },
+  {
+    "order_id": "ord_00112",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 177.64
+  },
+  {
+    "order_id": "ord_00113",
+    "customer_id": "cust_0012",
+    "order_date": "2018-10-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 330.07
+  },
+  {
+    "order_id": "ord_00114",
+    "customer_id": "cust_0012",
+    "order_date": "2023-07-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 451.87
+  },
+  {
+    "order_id": "ord_00115",
+    "customer_id": "cust_0012",
+    "order_date": "2024-11-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 488.68
+  },
+  {
+    "order_id": "ord_00116",
+    "customer_id": "cust_0012",
+    "order_date": "2020-12-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 384.63
+  },
+  {
+    "order_id": "ord_00117",
+    "customer_id": "cust_0012",
+    "order_date": "2019-02-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 133.7
+  },
+  {
+    "order_id": "ord_00118",
+    "customer_id": "cust_0012",
+    "order_date": "2023-03-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 496.82
+  },
+  {
+    "order_id": "ord_00119",
+    "customer_id": "cust_0012",
+    "order_date": "2016-06-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 389.12
+  },
+  {
+    "order_id": "ord_00120",
+    "customer_id": "cust_0012",
+    "order_date": "2023-09-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 136.1
+  },
+  {
+    "order_id": "ord_00121",
+    "customer_id": "cust_0013",
+    "order_date": "2022-03-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 127.21
+  },
+  {
+    "order_id": "ord_00122",
+    "customer_id": "cust_0013",
+    "order_date": "2025-12-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 86.77
+  },
+  {
+    "order_id": "ord_00123",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-01-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 171.58
+  },
+  {
+    "order_id": "ord_00124",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 72.64
+  },
+  {
+    "order_id": "ord_00125",
+    "customer_id": "cust_0013",
+    "order_date": "2019-04-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 134.22
+  },
+  {
+    "order_id": "ord_00126",
+    "customer_id": "cust_0013",
+    "order_date": "2019-04-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 452.76
+  },
+  {
+    "order_id": "ord_00127",
+    "customer_id": "cust_0013",
+    "order_date": "2018-07-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 362.32
+  },
+  {
+    "order_id": "ord_00128",
+    "customer_id": "cust_0013",
+    "order_date": "2019-03-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 449.49
+  },
+  {
+    "order_id": "ord_00129",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 184.35
+  },
+  {
+    "order_id": "ord_00130",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-03-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 145.62
+  },
+  {
+    "order_id": "ord_00131",
+    "customer_id": "cust_0014",
+    "order_date": "2021-09-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 81.83
+  },
+  {
+    "order_id": "ord_00132",
+    "customer_id": "cust_0014",
+    "order_date": "2017-06-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 311.0
+  },
+  {
+    "order_id": "ord_00133",
+    "customer_id": "cust_0014",
+    "order_date": "2018-09-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 290.64
+  },
+  {
+    "order_id": "ord_00134",
+    "customer_id": "cust_0014",
+    "order_date": "2024-04-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 322.06
+  },
+  {
+    "order_id": "ord_00135",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-09-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 161.63
+  },
+  {
+    "order_id": "ord_00136",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-09-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 257.37
+  },
+  {
+    "order_id": "ord_00137",
+    "customer_id": "cust_0014",
+    "order_date": "2026-03-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 275.82
+  },
+  {
+    "order_id": "ord_00138",
+    "customer_id": "cust_0014",
+    "order_date": "2023-06-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 354.02
+  },
+  {
+    "order_id": "ord_00139",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-11-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 499.04
+  },
+  {
+    "order_id": "ord_00140",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-10-31",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 336.68
+  },
+  {
+    "order_id": "ord_00141",
+    "customer_id": "cust_0015",
+    "order_date": "2019-06-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 30.13
+  },
+  {
+    "order_id": "ord_00142",
+    "customer_id": "cust_0015",
+    "order_date": "2017-04-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 378.3
+  },
+  {
+    "order_id": "ord_00143",
+    "customer_id": "cust_0015",
+    "order_date": "2017-04-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 226.05
+  },
+  {
+    "order_id": "ord_00144",
+    "customer_id": "cust_0015",
+    "order_date": "2024-08-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 178.61
+  },
+  {
+    "order_id": "ord_00145",
+    "customer_id": "cust_0015",
+    "order_date": "2025-03-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 158.53
+  },
+  {
+    "order_id": "ord_00146",
+    "customer_id": "cust_0015",
+    "order_date": "2025-01-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 114.44
+  },
+  {
+    "order_id": "ord_00147",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-02-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 283.21
+  },
+  {
+    "order_id": "ord_00148",
+    "customer_id": "cust_0015",
+    "order_date": "2019-06-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 325.69
+  },
+  {
+    "order_id": "ord_00149",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 434.45
+  },
+  {
+    "order_id": "ord_00150",
+    "customer_id": "cust_0015",
+    "order_date": "2017-09-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 13.15
+  },
+  {
+    "order_id": "ord_00151",
+    "customer_id": "cust_0016",
+    "order_date": "2016-06-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 339.88
+  },
+  {
+    "order_id": "ord_00152",
+    "customer_id": "cust_0016",
+    "order_date": "2017-09-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 312.61
+  },
+  {
+    "order_id": "ord_00153",
+    "customer_id": "cust_0016",
+    "order_date": "2019-03-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 307.24
+  },
+  {
+    "order_id": "ord_00154",
+    "customer_id": "cust_0016",
+    "order_date": "2017-11-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 483.62
+  },
+  {
+    "order_id": "ord_00155",
+    "customer_id": "cust_0016",
+    "order_date": "2022-05-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 286.64
+  },
+  {
+    "order_id": "ord_00156",
+    "customer_id": "cust_0016",
+    "order_date": "2017-03-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 421.6
+  },
+  {
+    "order_id": "ord_00157",
+    "customer_id": "cust_0016",
+    "order_date": "2025-05-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 228.17
+  },
+  {
+    "order_id": "ord_00158",
+    "customer_id": "cust_0016",
+    "order_date": "2026-03-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 230.29
+  },
+  {
+    "order_id": "ord_00159",
+    "customer_id": "cust_0016",
+    "order_date": "2024-08-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 483.21
+  },
+  {
+    "order_id": "ord_00160",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 459.73
+  },
+  {
+    "order_id": "ord_00161",
+    "customer_id": "cust_0017",
+    "order_date": "2024-01-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 445.19
+  },
+  {
+    "order_id": "ord_00162",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 48.71
+  },
+  {
+    "order_id": "ord_00163",
+    "customer_id": "cust_0017",
+    "order_date": "2023-05-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 56.58
+  },
+  {
+    "order_id": "ord_00164",
+    "customer_id": "cust_0017",
+    "order_date": "2023-04-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 458.35
+  },
+  {
+    "order_id": "ord_00165",
+    "customer_id": "cust_0017",
+    "order_date": "2022-04-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 279.32
+  },
+  {
+    "order_id": "ord_00166",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-10-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 464.86
+  },
+  {
+    "order_id": "ord_00167",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-03-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 95.29
+  },
+  {
+    "order_id": "ord_00168",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-08-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 369.62
+  },
+  {
+    "order_id": "ord_00169",
+    "customer_id": "cust_0017",
+    "order_date": "2021-11-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 147.61
+  },
+  {
+    "order_id": "ord_00170",
+    "customer_id": "cust_0017",
+    "order_date": "2017-01-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 66.36
+  },
+  {
+    "order_id": "ord_00171",
+    "customer_id": "cust_0018",
+    "order_date": "2021-02-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 149.43
+  },
+  {
+    "order_id": "ord_00172",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 441.78
+  },
+  {
+    "order_id": "ord_00173",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-01-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 91.14
+  },
+  {
+    "order_id": "ord_00174",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-12-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 399.7
+  },
+  {
+    "order_id": "ord_00175",
+    "customer_id": "cust_0018",
+    "order_date": "2017-10-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 275.68
+  },
+  {
+    "order_id": "ord_00176",
+    "customer_id": "cust_0018",
+    "order_date": "2025-06-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 406.56
+  },
+  {
+    "order_id": "ord_00177",
+    "customer_id": "cust_0018",
+    "order_date": "2025-12-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 64.2
+  },
+  {
+    "order_id": "ord_00178",
+    "customer_id": "cust_0018",
+    "order_date": "2022-11-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 334.74
+  },
+  {
+    "order_id": "ord_00179",
+    "customer_id": "cust_0018",
+    "order_date": "2024-02-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 116.88
+  },
+  {
+    "order_id": "ord_00180",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 62.97
+  },
+  {
+    "order_id": "ord_00181",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-09-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 169.78
+  },
+  {
+    "order_id": "ord_00182",
+    "customer_id": "cust_0019",
+    "order_date": "2024-09-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 378.31
+  },
+  {
+    "order_id": "ord_00183",
+    "customer_id": "cust_0019",
+    "order_date": "2020-05-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 444.65
+  },
+  {
+    "order_id": "ord_00184",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-03-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 452.39
+  },
+  {
+    "order_id": "ord_00185",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-08-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 37.06
+  },
+  {
+    "order_id": "ord_00186",
+    "customer_id": "cust_0019",
+    "order_date": "2018-06-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 498.61
+  },
+  {
+    "order_id": "ord_00187",
+    "customer_id": "cust_0019",
+    "order_date": "2019-08-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 255.7
+  },
+  {
+    "order_id": "ord_00188",
+    "customer_id": "cust_0019",
+    "order_date": "2017-08-31",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 263.27
+  },
+  {
+    "order_id": "ord_00189",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-03-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 86.47
+  },
+  {
+    "order_id": "ord_00190",
+    "customer_id": "cust_0019",
+    "order_date": "2019-11-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 32.75
+  },
+  {
+    "order_id": "ord_00191",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-03-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 112.88
+  },
+  {
+    "order_id": "ord_00192",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 421.75
+  },
+  {
+    "order_id": "ord_00193",
+    "customer_id": "cust_0020",
+    "order_date": "2017-01-31",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 22.75
+  },
+  {
+    "order_id": "ord_00194",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 149.94
+  },
+  {
+    "order_id": "ord_00195",
+    "customer_id": "cust_0020",
+    "order_date": "2024-12-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 49.34
+  },
+  {
+    "order_id": "ord_00196",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-12-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 281.38
+  },
+  {
+    "order_id": "ord_00197",
+    "customer_id": "cust_0020",
+    "order_date": "2022-01-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 364.12
+  },
+  {
+    "order_id": "ord_00198",
+    "customer_id": "cust_0020",
+    "order_date": "2022-10-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 195.13
+  },
+  {
+    "order_id": "ord_00199",
+    "customer_id": "cust_0020",
+    "order_date": "2024-06-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 115.45
+  },
+  {
+    "order_id": "ord_00200",
+    "customer_id": "cust_0020",
+    "order_date": "2020-08-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 447.41
+  },
+  {
+    "order_id": "ord_00201",
+    "customer_id": "cust_0021",
+    "order_date": "2024-03-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 76.72
+  },
+  {
+    "order_id": "ord_00202",
+    "customer_id": "cust_0021",
+    "order_date": "2019-09-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 375.4
+  },
+  {
+    "order_id": "ord_00203",
+    "customer_id": "cust_0021",
+    "order_date": "2018-03-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 31.24
+  },
+  {
+    "order_id": "ord_00204",
+    "customer_id": "cust_0021",
+    "order_date": "2024-11-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 64.17
+  },
+  {
+    "order_id": "ord_00205",
+    "customer_id": "cust_0021",
+    "order_date": "2020-12-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 437.32
+  },
+  {
+    "order_id": "ord_00206",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-04-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 365.88
+  },
+  {
+    "order_id": "ord_00207",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-06-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 198.54
+  },
+  {
+    "order_id": "ord_00208",
+    "customer_id": "cust_0021",
+    "order_date": "2017-10-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 208.18
+  },
+  {
+    "order_id": "ord_00209",
+    "customer_id": "cust_0021",
+    "order_date": "2024-11-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 432.66
+  },
+  {
+    "order_id": "ord_00210",
+    "customer_id": "cust_0021",
+    "order_date": "2018-05-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 131.8
+  },
+  {
+    "order_id": "ord_00211",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-03-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 322.12
+  },
+  {
+    "order_id": "ord_00212",
+    "customer_id": "cust_0022",
+    "order_date": "2020-09-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 102.21
+  },
+  {
+    "order_id": "ord_00213",
+    "customer_id": "cust_0022",
+    "order_date": "2018-12-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 308.5
+  },
+  {
+    "order_id": "ord_00214",
+    "customer_id": "cust_0022",
+    "order_date": "2025-09-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 432.38
+  },
+  {
+    "order_id": "ord_00215",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-09-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 210.84
+  },
+  {
+    "order_id": "ord_00216",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 448.92
+  },
+  {
+    "order_id": "ord_00217",
+    "customer_id": "cust_0022",
+    "order_date": "2018-10-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 29.49
+  },
+  {
+    "order_id": "ord_00218",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-06-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 449.5
+  },
+  {
+    "order_id": "ord_00219",
+    "customer_id": "cust_0022",
+    "order_date": "2025-02-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 397.25
+  },
+  {
+    "order_id": "ord_00220",
+    "customer_id": "cust_0022",
+    "order_date": "2019-12-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 312.07
+  },
+  {
+    "order_id": "ord_00221",
+    "customer_id": "cust_0023",
+    "order_date": "2016-07-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 364.4
+  },
+  {
+    "order_id": "ord_00222",
+    "customer_id": "cust_0023",
+    "order_date": "2022-04-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 470.98
+  },
+  {
+    "order_id": "ord_00223",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-11-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 143.37
+  },
+  {
+    "order_id": "ord_00224",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-06-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 289.32
+  },
+  {
+    "order_id": "ord_00225",
+    "customer_id": "cust_0023",
+    "order_date": "2022-01-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 301.54
+  },
+  {
+    "order_id": "ord_00226",
+    "customer_id": "cust_0023",
+    "order_date": "2020-02-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 356.57
+  },
+  {
+    "order_id": "ord_00227",
+    "customer_id": "cust_0023",
+    "order_date": "2020-01-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 168.95
+  },
+  {
+    "order_id": "ord_00228",
+    "customer_id": "cust_0023",
+    "order_date": "2019-04-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 273.11
+  },
+  {
+    "order_id": "ord_00229",
+    "customer_id": "cust_0023",
+    "order_date": "2018-02-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 418.01
+  },
+  {
+    "order_id": "ord_00230",
+    "customer_id": "cust_0023",
+    "order_date": "2017-09-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 132.96
+  },
+  {
+    "order_id": "ord_00231",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 185.46
+  },
+  {
+    "order_id": "ord_00232",
+    "customer_id": "cust_0024",
+    "order_date": "2023-09-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 262.46
+  },
+  {
+    "order_id": "ord_00233",
+    "customer_id": "cust_0024",
+    "order_date": "2016-11-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 363.2
+  },
+  {
+    "order_id": "ord_00234",
+    "customer_id": "cust_0024",
+    "order_date": "2023-01-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 382.71
+  },
+  {
+    "order_id": "ord_00235",
+    "customer_id": "cust_0024",
+    "order_date": "2026-03-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 397.52
+  },
+  {
+    "order_id": "ord_00236",
+    "customer_id": "cust_0024",
+    "order_date": "2020-03-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 432.31
+  },
+  {
+    "order_id": "ord_00237",
+    "customer_id": "cust_0024",
+    "order_date": "2016-12-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 468.22
+  },
+  {
+    "order_id": "ord_00238",
+    "customer_id": "cust_0024",
+    "order_date": "2021-10-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 457.43
+  },
+  {
+    "order_id": "ord_00239",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-11-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 162.8
+  },
+  {
+    "order_id": "ord_00240",
+    "customer_id": "cust_0024",
+    "order_date": "2023-10-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 460.87
+  },
+  {
+    "order_id": "ord_00241",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-08-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 328.91
+  },
+  {
+    "order_id": "ord_00242",
+    "customer_id": "cust_0025",
+    "order_date": "2024-05-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 288.99
+  },
+  {
+    "order_id": "ord_00243",
+    "customer_id": "cust_0025",
+    "order_date": "2017-05-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 468.34
+  },
+  {
+    "order_id": "ord_00244",
+    "customer_id": "cust_0025",
+    "order_date": "2022-04-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 13.64
+  },
+  {
+    "order_id": "ord_00245",
+    "customer_id": "cust_0025",
+    "order_date": "2022-11-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 336.57
+  },
+  {
+    "order_id": "ord_00246",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-12-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 401.61
+  },
+  {
+    "order_id": "ord_00247",
+    "customer_id": "cust_0025",
+    "order_date": "2021-11-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 309.98
+  },
+  {
+    "order_id": "ord_00248",
+    "customer_id": "cust_0025",
+    "order_date": "2025-03-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 185.5
+  },
+  {
+    "order_id": "ord_00249",
+    "customer_id": "cust_0025",
+    "order_date": "2023-11-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 482.31
+  },
+  {
+    "order_id": "ord_00250",
+    "customer_id": "cust_0025",
+    "order_date": "2023-02-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 222.79
+  },
+  {
+    "order_id": "ord_00251",
+    "customer_id": "cust_0026",
+    "order_date": "2021-03-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 192.02
+  },
+  {
+    "order_id": "ord_00252",
+    "customer_id": "cust_0026",
+    "order_date": "2018-07-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 83.01
+  },
+  {
+    "order_id": "ord_00253",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 302.14
+  },
+  {
+    "order_id": "ord_00254",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-04-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 201.92
+  },
+  {
+    "order_id": "ord_00255",
+    "customer_id": "cust_0026",
+    "order_date": "2023-04-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 394.78
+  },
+  {
+    "order_id": "ord_00256",
+    "customer_id": "cust_0026",
+    "order_date": "2024-12-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 336.94
+  },
+  {
+    "order_id": "ord_00257",
+    "customer_id": "cust_0026",
+    "order_date": "2018-02-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 337.88
+  },
+  {
+    "order_id": "ord_00258",
+    "customer_id": "cust_0026",
+    "order_date": "2025-01-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 95.41
+  },
+  {
+    "order_id": "ord_00259",
+    "customer_id": "cust_0026",
+    "order_date": "2026-01-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 202.3
+  },
+  {
+    "order_id": "ord_00260",
+    "customer_id": "cust_0026",
+    "order_date": "2016-09-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 368.25
+  },
+  {
+    "order_id": "ord_00261",
+    "customer_id": "cust_0027",
+    "order_date": "2023-11-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 118.59
+  },
+  {
+    "order_id": "ord_00262",
+    "customer_id": "cust_0027",
+    "order_date": "2019-08-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 84.57
+  },
+  {
+    "order_id": "ord_00263",
+    "customer_id": "cust_0027",
+    "order_date": "2024-01-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 363.32
+  },
+  {
+    "order_id": "ord_00264",
+    "customer_id": "cust_0027",
+    "order_date": "2018-09-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 158.96
+  },
+  {
+    "order_id": "ord_00265",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-06-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 155.2
+  },
+  {
+    "order_id": "ord_00266",
+    "customer_id": "cust_0027",
+    "order_date": "2022-12-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 254.86
+  },
+  {
+    "order_id": "ord_00267",
+    "customer_id": "cust_0027",
+    "order_date": "2018-07-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 171.77
+  },
+  {
+    "order_id": "ord_00268",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-08-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 253.27
+  },
+  {
+    "order_id": "ord_00269",
+    "customer_id": "cust_0027",
+    "order_date": "2021-06-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 355.28
+  },
+  {
+    "order_id": "ord_00270",
+    "customer_id": "cust_0027",
+    "order_date": "2018-07-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 134.79
+  },
+  {
+    "order_id": "ord_00271",
+    "customer_id": "cust_0028",
+    "order_date": "2023-08-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 286.12
+  },
+  {
+    "order_id": "ord_00272",
+    "customer_id": "cust_0028",
+    "order_date": "2017-10-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 74.15
+  },
+  {
+    "order_id": "ord_00273",
+    "customer_id": "cust_0028",
+    "order_date": "2016-07-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 56.6
+  },
+  {
+    "order_id": "ord_00274",
+    "customer_id": "cust_0028",
+    "order_date": "2024-04-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 10.24
+  },
+  {
+    "order_id": "ord_00275",
+    "customer_id": "cust_0028",
+    "order_date": "2020-03-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 242.18
+  },
+  {
+    "order_id": "ord_00276",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 240.41
+  },
+  {
+    "order_id": "ord_00277",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 12.45
+  },
+  {
+    "order_id": "ord_00278",
+    "customer_id": "cust_0028",
+    "order_date": "2016-07-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 214.5
+  },
+  {
+    "order_id": "ord_00279",
+    "customer_id": "cust_0028",
+    "order_date": "2024-09-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 467.86
+  },
+  {
+    "order_id": "ord_00280",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 139.2
+  },
+  {
+    "order_id": "ord_00281",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-06-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 268.05
+  },
+  {
+    "order_id": "ord_00282",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-09-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 190.94
+  },
+  {
+    "order_id": "ord_00283",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-03-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 290.17
+  },
+  {
+    "order_id": "ord_00284",
+    "customer_id": "cust_0029",
+    "order_date": "2018-03-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 443.35
+  },
+  {
+    "order_id": "ord_00285",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-08-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 191.54
+  },
+  {
+    "order_id": "ord_00286",
+    "customer_id": "cust_0029",
+    "order_date": "2024-06-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 84.84
+  },
+  {
+    "order_id": "ord_00287",
+    "customer_id": "cust_0029",
+    "order_date": "2018-03-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 342.24
+  },
+  {
+    "order_id": "ord_00288",
+    "customer_id": "cust_0029",
+    "order_date": "2024-05-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 167.71
+  },
+  {
+    "order_id": "ord_00289",
+    "customer_id": "cust_0029",
+    "order_date": "2016-08-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 219.77
+  },
+  {
+    "order_id": "ord_00290",
+    "customer_id": "cust_0029",
+    "order_date": "2019-12-31",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 173.43
+  },
+  {
+    "order_id": "ord_00291",
+    "customer_id": "cust_0030",
+    "order_date": "2023-10-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 338.23
+  },
+  {
+    "order_id": "ord_00292",
+    "customer_id": "cust_0030",
+    "order_date": "2023-03-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 150.23
+  },
+  {
+    "order_id": "ord_00293",
+    "customer_id": "cust_0030",
+    "order_date": "2017-10-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 280.61
+  },
+  {
+    "order_id": "ord_00294",
+    "customer_id": "cust_0030",
+    "order_date": "2025-05-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 56.42
+  },
+  {
+    "order_id": "ord_00295",
+    "customer_id": "cust_0030",
+    "order_date": "2020-12-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 450.8
+  },
+  {
+    "order_id": "ord_00296",
+    "customer_id": "cust_0030",
+    "order_date": "2017-03-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 430.65
+  },
+  {
+    "order_id": "ord_00297",
+    "customer_id": "cust_0030",
+    "order_date": "2022-10-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 46.39
+  },
+  {
+    "order_id": "ord_00298",
+    "customer_id": "cust_0030",
+    "order_date": "2019-10-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 124.49
+  },
+  {
+    "order_id": "ord_00299",
+    "customer_id": "cust_0030",
+    "order_date": "2020-05-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 49.67
+  },
+  {
+    "order_id": "ord_00300",
+    "customer_id": "cust_0030",
+    "order_date": "2021-02-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 345.25
+  },
+  {
+    "order_id": "ord_00301",
+    "customer_id": "cust_0031",
+    "order_date": "2026-03-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 189.26
+  },
+  {
+    "order_id": "ord_00302",
+    "customer_id": "cust_0031",
+    "order_date": "2019-12-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 355.0
+  },
+  {
+    "order_id": "ord_00303",
+    "customer_id": "cust_0031",
+    "order_date": "2024-03-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 253.81
+  },
+  {
+    "order_id": "ord_00304",
+    "customer_id": "cust_0031",
+    "order_date": "2020-05-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 89.91
+  },
+  {
+    "order_id": "ord_00305",
+    "customer_id": "cust_0031",
+    "order_date": "2016-06-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 253.32
+  },
+  {
+    "order_id": "ord_00306",
+    "customer_id": "cust_0031",
+    "order_date": "2022-08-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 438.89
+  },
+  {
+    "order_id": "ord_00307",
+    "customer_id": "cust_0031",
+    "order_date": "2023-04-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 32.14
+  },
+  {
+    "order_id": "ord_00308",
+    "customer_id": "cust_0031",
+    "order_date": "2018-01-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 162.41
+  },
+  {
+    "order_id": "ord_00309",
+    "customer_id": "cust_0031",
+    "order_date": "2025-11-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 343.33
+  },
+  {
+    "order_id": "ord_00310",
+    "customer_id": "cust_0031",
+    "order_date": "2025-10-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 176.67
+  },
+  {
+    "order_id": "ord_00311",
+    "customer_id": "cust_0032",
+    "order_date": "2017-12-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 103.64
+  },
+  {
+    "order_id": "ord_00312",
+    "customer_id": "cust_0032",
+    "order_date": "2020-05-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 480.35
+  },
+  {
+    "order_id": "ord_00313",
+    "customer_id": "cust_0032",
+    "order_date": "2018-01-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 34.85
+  },
+  {
+    "order_id": "ord_00314",
+    "customer_id": "cust_0032",
+    "order_date": "2020-06-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 419.69
+  },
+  {
+    "order_id": "ord_00315",
+    "customer_id": "cust_0032",
+    "order_date": "2019-03-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 132.15
+  },
+  {
+    "order_id": "ord_00316",
+    "customer_id": "cust_0032",
+    "order_date": "2020-01-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 101.2
+  },
+  {
+    "order_id": "ord_00317",
+    "customer_id": "cust_0032",
+    "order_date": "2019-06-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 488.55
+  },
+  {
+    "order_id": "ord_00318",
+    "customer_id": "cust_0032",
+    "order_date": "2021-03-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 114.08
+  },
+  {
+    "order_id": "ord_00319",
+    "customer_id": "cust_0032",
+    "order_date": "2018-08-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 450.22
+  },
+  {
+    "order_id": "ord_00320",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-07-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 138.39
+  },
+  {
+    "order_id": "ord_00321",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-10-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 336.48
+  },
+  {
+    "order_id": "ord_00322",
+    "customer_id": "cust_0033",
+    "order_date": "2017-11-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 216.54
+  },
+  {
+    "order_id": "ord_00323",
+    "customer_id": "cust_0033",
+    "order_date": "2019-10-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 204.18
+  },
+  {
+    "order_id": "ord_00324",
+    "customer_id": "cust_0033",
+    "order_date": "2018-04-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 485.51
+  },
+  {
+    "order_id": "ord_00325",
+    "customer_id": "cust_0033",
+    "order_date": "2025-02-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 206.52
+  },
+  {
+    "order_id": "ord_00326",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-01-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 275.67
+  },
+  {
+    "order_id": "ord_00327",
+    "customer_id": "cust_0033",
+    "order_date": "2018-10-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 120.46
+  },
+  {
+    "order_id": "ord_00328",
+    "customer_id": "cust_0033",
+    "order_date": "2025-05-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 314.56
+  },
+  {
+    "order_id": "ord_00329",
+    "customer_id": "cust_0033",
+    "order_date": "2017-12-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 322.56
+  },
+  {
+    "order_id": "ord_00330",
+    "customer_id": "cust_0033",
+    "order_date": "2022-06-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 175.41
+  },
+  {
+    "order_id": "ord_00331",
+    "customer_id": "cust_0034",
+    "order_date": "2016-12-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 79.25
+  },
+  {
+    "order_id": "ord_00332",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 439.1
+  },
+  {
+    "order_id": "ord_00333",
+    "customer_id": "cust_0034",
+    "order_date": "2026-04-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 340.68
+  },
+  {
+    "order_id": "ord_00334",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-06-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 483.78
+  },
+  {
+    "order_id": "ord_00335",
+    "customer_id": "cust_0034",
+    "order_date": "2019-08-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 55.94
+  },
+  {
+    "order_id": "ord_00336",
+    "customer_id": "cust_0034",
+    "order_date": "2025-09-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 390.79
+  },
+  {
+    "order_id": "ord_00337",
+    "customer_id": "cust_0034",
+    "order_date": "2021-07-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 321.11
+  },
+  {
+    "order_id": "ord_00338",
+    "customer_id": "cust_0034",
+    "order_date": "2016-09-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 124.22
+  },
+  {
+    "order_id": "ord_00339",
+    "customer_id": "cust_0034",
+    "order_date": "2020-04-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 67.24
+  },
+  {
+    "order_id": "ord_00340",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-02-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 397.88
+  },
+  {
+    "order_id": "ord_00341",
+    "customer_id": "cust_0035",
+    "order_date": "2026-03-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 10.8
+  },
+  {
+    "order_id": "ord_00342",
+    "customer_id": "cust_0035",
+    "order_date": "2017-12-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 249.59
+  },
+  {
+    "order_id": "ord_00343",
+    "customer_id": "cust_0035",
+    "order_date": "2018-12-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 420.99
+  },
+  {
+    "order_id": "ord_00344",
+    "customer_id": "cust_0035",
+    "order_date": "2019-05-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 213.27
+  },
+  {
+    "order_id": "ord_00345",
+    "customer_id": "cust_0035",
+    "order_date": "2020-12-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 143.21
+  },
+  {
+    "order_id": "ord_00346",
+    "customer_id": "cust_0035",
+    "order_date": "2019-12-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 159.68
+  },
+  {
+    "order_id": "ord_00347",
+    "customer_id": "cust_0035",
+    "order_date": "2025-05-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 182.59
+  },
+  {
+    "order_id": "ord_00348",
+    "customer_id": "cust_0035",
+    "order_date": "2018-09-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 147.12
+  },
+  {
+    "order_id": "ord_00349",
+    "customer_id": "cust_0035",
+    "order_date": "2025-02-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 22.75
+  },
+  {
+    "order_id": "ord_00350",
+    "customer_id": "cust_0035",
+    "order_date": "2020-12-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 132.47
+  },
+  {
+    "order_id": "ord_00351",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-07-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 416.05
+  },
+  {
+    "order_id": "ord_00352",
+    "customer_id": "cust_0036",
+    "order_date": "2023-11-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 259.77
+  },
+  {
+    "order_id": "ord_00353",
+    "customer_id": "cust_0036",
+    "order_date": "2025-09-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 223.29
+  },
+  {
+    "order_id": "ord_00354",
+    "customer_id": "cust_0036",
+    "order_date": "2020-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 238.08
+  },
+  {
+    "order_id": "ord_00355",
+    "customer_id": "cust_0036",
+    "order_date": "2018-10-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 214.0
+  },
+  {
+    "order_id": "ord_00356",
+    "customer_id": "cust_0036",
+    "order_date": "2019-12-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 402.97
+  },
+  {
+    "order_id": "ord_00357",
+    "customer_id": "cust_0036",
+    "order_date": "2025-10-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 365.99
+  },
+  {
+    "order_id": "ord_00358",
+    "customer_id": "cust_0036",
+    "order_date": "2025-01-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 84.26
+  },
+  {
+    "order_id": "ord_00359",
+    "customer_id": "cust_0036",
+    "order_date": "2019-04-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 251.65
+  },
+  {
+    "order_id": "ord_00360",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-11-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 121.99
+  },
+  {
+    "order_id": "ord_00361",
+    "customer_id": "cust_0037",
+    "order_date": "2022-03-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 45.07
+  },
+  {
+    "order_id": "ord_00362",
+    "customer_id": "cust_0037",
+    "order_date": "2019-07-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 58.8
+  },
+  {
+    "order_id": "ord_00363",
+    "customer_id": "cust_0037",
+    "order_date": "2018-10-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 103.61
+  },
+  {
+    "order_id": "ord_00364",
+    "customer_id": "cust_0037",
+    "order_date": "2019-03-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 58.61
+  },
+  {
+    "order_id": "ord_00365",
+    "customer_id": "cust_0037",
+    "order_date": "2024-08-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 333.76
+  },
+  {
+    "order_id": "ord_00366",
+    "customer_id": "cust_0037",
+    "order_date": "2019-07-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 175.1
+  },
+  {
+    "order_id": "ord_00367",
+    "customer_id": "cust_0037",
+    "order_date": "2018-11-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 226.03
+  },
+  {
+    "order_id": "ord_00368",
+    "customer_id": "cust_0037",
+    "order_date": "2024-10-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 259.53
+  },
+  {
+    "order_id": "ord_00369",
+    "customer_id": "cust_0037",
+    "order_date": "2017-11-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 426.72
+  },
+  {
+    "order_id": "ord_00370",
+    "customer_id": "cust_0037",
+    "order_date": "2021-10-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 399.31
+  },
+  {
+    "order_id": "ord_00371",
+    "customer_id": "cust_0038",
+    "order_date": "2024-10-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 105.07
+  },
+  {
+    "order_id": "ord_00372",
+    "customer_id": "cust_0038",
+    "order_date": "2019-01-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 283.58
+  },
+  {
+    "order_id": "ord_00373",
+    "customer_id": "cust_0038",
+    "order_date": "2025-05-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 298.52
+  },
+  {
+    "order_id": "ord_00374",
+    "customer_id": "cust_0038",
+    "order_date": "2021-11-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 57.18
+  },
+  {
+    "order_id": "ord_00375",
+    "customer_id": "cust_0038",
+    "order_date": "2023-12-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 499.56
+  },
+  {
+    "order_id": "ord_00376",
+    "customer_id": "cust_0038",
+    "order_date": "2026-04-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 179.04
+  },
+  {
+    "order_id": "ord_00377",
+    "customer_id": "cust_0038",
+    "order_date": "2022-10-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 426.38
+  },
+  {
+    "order_id": "ord_00378",
+    "customer_id": "cust_0038",
+    "order_date": "2025-09-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 91.17
+  },
+  {
+    "order_id": "ord_00379",
+    "customer_id": "cust_0038",
+    "order_date": "2026-03-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 176.27
+  },
+  {
+    "order_id": "ord_00380",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-01-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 336.12
+  },
+  {
+    "order_id": "ord_00381",
+    "customer_id": "cust_0039",
+    "order_date": "2018-04-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 487.39
+  },
+  {
+    "order_id": "ord_00382",
+    "customer_id": "cust_0039",
+    "order_date": "2018-09-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 304.25
+  },
+  {
+    "order_id": "ord_00383",
+    "customer_id": "cust_0039",
+    "order_date": "2024-09-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 413.06
+  },
+  {
+    "order_id": "ord_00384",
+    "customer_id": "cust_0039",
+    "order_date": "2025-10-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 73.05
+  },
+  {
+    "order_id": "ord_00385",
+    "customer_id": "cust_0039",
+    "order_date": "2016-12-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 286.26
+  },
+  {
+    "order_id": "ord_00386",
+    "customer_id": "cust_0039",
+    "order_date": "2025-05-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 494.41
+  },
+  {
+    "order_id": "ord_00387",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-03-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 189.14
+  },
+  {
+    "order_id": "ord_00388",
+    "customer_id": "cust_0039",
+    "order_date": "2020-10-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 131.23
+  },
+  {
+    "order_id": "ord_00389",
+    "customer_id": "cust_0039",
+    "order_date": "2017-02-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 204.31
+  },
+  {
+    "order_id": "ord_00390",
+    "customer_id": "cust_0039",
+    "order_date": "2022-05-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 159.71
+  },
+  {
+    "order_id": "ord_00391",
+    "customer_id": "cust_0040",
+    "order_date": "2020-05-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 222.93
+  },
+  {
+    "order_id": "ord_00392",
+    "customer_id": "cust_0040",
+    "order_date": "2021-12-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 367.79
+  },
+  {
+    "order_id": "ord_00393",
+    "customer_id": "cust_0040",
+    "order_date": "2024-12-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 27.49
+  },
+  {
+    "order_id": "ord_00394",
+    "customer_id": "cust_0040",
+    "order_date": "2020-10-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 65.68
+  },
+  {
+    "order_id": "ord_00395",
+    "customer_id": "cust_0040",
+    "order_date": "2024-10-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 446.76
+  },
+  {
+    "order_id": "ord_00396",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-06-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 204.08
+  },
+  {
+    "order_id": "ord_00397",
+    "customer_id": "cust_0040",
+    "order_date": "2025-12-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 457.45
+  },
+  {
+    "order_id": "ord_00398",
+    "customer_id": "cust_0040",
+    "order_date": "2025-09-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 289.27
+  },
+  {
+    "order_id": "ord_00399",
+    "customer_id": "cust_0040",
+    "order_date": "2021-06-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 205.93
+  },
+  {
+    "order_id": "ord_00400",
+    "customer_id": "cust_0040",
+    "order_date": "2021-08-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 210.66
+  },
+  {
+    "order_id": "ord_00401",
+    "customer_id": "cust_0041",
+    "order_date": "2022-10-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 323.44
+  },
+  {
+    "order_id": "ord_00402",
+    "customer_id": "cust_0041",
+    "order_date": "2017-10-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 209.45
+  },
+  {
+    "order_id": "ord_00403",
+    "customer_id": "cust_0041",
+    "order_date": "2021-09-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 120.18
+  },
+  {
+    "order_id": "ord_00404",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-03-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 298.44
+  },
+  {
+    "order_id": "ord_00405",
+    "customer_id": "cust_0041",
+    "order_date": "2020-03-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 329.87
+  },
+  {
+    "order_id": "ord_00406",
+    "customer_id": "cust_0041",
+    "order_date": "2023-02-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 179.3
+  },
+  {
+    "order_id": "ord_00407",
+    "customer_id": "cust_0041",
+    "order_date": "2022-02-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 380.84
+  },
+  {
+    "order_id": "ord_00408",
+    "customer_id": "cust_0041",
+    "order_date": "2017-10-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 348.0
+  },
+  {
+    "order_id": "ord_00409",
+    "customer_id": "cust_0041",
+    "order_date": "2017-09-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 40.19
+  },
+  {
+    "order_id": "ord_00410",
+    "customer_id": "cust_0041",
+    "order_date": "2021-05-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 167.34
+  },
+  {
+    "order_id": "ord_00411",
+    "customer_id": "cust_0042",
+    "order_date": "2022-12-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 212.77
+  },
+  {
+    "order_id": "ord_00412",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-12-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 189.57
+  },
+  {
+    "order_id": "ord_00413",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-12-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 398.48
+  },
+  {
+    "order_id": "ord_00414",
+    "customer_id": "cust_0042",
+    "order_date": "2023-02-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 59.85
+  },
+  {
+    "order_id": "ord_00415",
+    "customer_id": "cust_0042",
+    "order_date": "2021-04-18",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 261.13
+  },
+  {
+    "order_id": "ord_00416",
+    "customer_id": "cust_0042",
+    "order_date": "2016-08-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 118.93
+  },
+  {
+    "order_id": "ord_00417",
+    "customer_id": "cust_0042",
+    "order_date": "2023-01-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 374.52
+  },
+  {
+    "order_id": "ord_00418",
+    "customer_id": "cust_0042",
+    "order_date": "2022-11-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 487.06
+  },
+  {
+    "order_id": "ord_00419",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-08-24",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 107.19
+  },
+  {
+    "order_id": "ord_00420",
+    "customer_id": "cust_0042",
+    "order_date": "2020-08-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 110.2
+  },
+  {
+    "order_id": "ord_00421",
+    "customer_id": "cust_0043",
+    "order_date": "2023-11-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 146.47
+  },
+  {
+    "order_id": "ord_00422",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-02-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 487.45
+  },
+  {
+    "order_id": "ord_00423",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-05-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 297.94
+  },
+  {
+    "order_id": "ord_00424",
+    "customer_id": "cust_0043",
+    "order_date": "2017-07-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 406.43
+  },
+  {
+    "order_id": "ord_00425",
+    "customer_id": "cust_0043",
+    "order_date": "2024-09-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 470.51
+  },
+  {
+    "order_id": "ord_00426",
+    "customer_id": "cust_0043",
+    "order_date": "2023-08-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 142.36
+  },
+  {
+    "order_id": "ord_00427",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-03-31",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 81.08
+  },
+  {
+    "order_id": "ord_00428",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-08-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 59.04
+  },
+  {
+    "order_id": "ord_00429",
+    "customer_id": "cust_0043",
+    "order_date": "2022-07-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 123.61
+  },
+  {
+    "order_id": "ord_00430",
+    "customer_id": "cust_0043",
+    "order_date": "2021-09-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 311.8
+  },
+  {
+    "order_id": "ord_00431",
+    "customer_id": "cust_0044",
+    "order_date": "2023-12-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 245.05
+  },
+  {
+    "order_id": "ord_00432",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-02-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 123.08
+  },
+  {
+    "order_id": "ord_00433",
+    "customer_id": "cust_0044",
+    "order_date": "2024-04-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 97.71
+  },
+  {
+    "order_id": "ord_00434",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-10-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 71.56
+  },
+  {
+    "order_id": "ord_00435",
+    "customer_id": "cust_0044",
+    "order_date": "2018-08-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 144.43
+  },
+  {
+    "order_id": "ord_00436",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-01-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 325.38
+  },
+  {
+    "order_id": "ord_00437",
+    "customer_id": "cust_0044",
+    "order_date": "2024-08-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 325.89
+  },
+  {
+    "order_id": "ord_00438",
+    "customer_id": "cust_0044",
+    "order_date": "2017-01-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 43.18
+  },
+  {
+    "order_id": "ord_00439",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-03-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 386.06
+  },
+  {
+    "order_id": "ord_00440",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-10-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 369.2
+  },
+  {
+    "order_id": "ord_00441",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2016-04-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 424.38
+  },
+  {
+    "order_id": "ord_00442",
+    "customer_id": "cust_0045",
+    "order_date": "2021-05-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 293.52
+  },
+  {
+    "order_id": "ord_00443",
+    "customer_id": "cust_0045",
+    "order_date": "2018-12-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 145.34
+  },
+  {
+    "order_id": "ord_00444",
+    "customer_id": "cust_0045",
+    "order_date": "2020-05-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 437.38
+  },
+  {
+    "order_id": "ord_00445",
+    "customer_id": "cust_0045",
+    "order_date": "2022-03-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 256.95
+  },
+  {
+    "order_id": "ord_00446",
+    "customer_id": "cust_0045",
+    "order_date": "2024-10-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 131.13
+  },
+  {
+    "order_id": "ord_00447",
+    "customer_id": "cust_0045",
+    "order_date": "2022-10-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 467.37
+  },
+  {
+    "order_id": "ord_00448",
+    "customer_id": "cust_0045",
+    "order_date": "2021-05-14",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 165.64
+  },
+  {
+    "order_id": "ord_00449",
+    "customer_id": "cust_0045",
+    "order_date": "2024-02-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 103.42
+  },
+  {
+    "order_id": "ord_00450",
+    "customer_id": "cust_0045",
+    "order_date": "2016-07-07",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 369.12
+  },
+  {
+    "order_id": "ord_00451",
+    "customer_id": "cust_0046",
+    "order_date": "2019-07-25",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 45.91
+  },
+  {
+    "order_id": "ord_00452",
+    "customer_id": "cust_0046",
+    "order_date": "2024-03-16",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 116.48
+  },
+  {
+    "order_id": "ord_00453",
+    "customer_id": "cust_0046",
+    "order_date": "2021-04-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 73.03
+  },
+  {
+    "order_id": "ord_00454",
+    "customer_id": "cust_0046",
+    "order_date": "2016-11-21",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 109.58
+  },
+  {
+    "order_id": "ord_00455",
+    "customer_id": "cust_0046",
+    "order_date": "2023-04-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 91.38
+  },
+  {
+    "order_id": "ord_00456",
+    "customer_id": "cust_0046",
+    "order_date": "2019-06-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 42.88
+  },
+  {
+    "order_id": "ord_00457",
+    "customer_id": "cust_0046",
+    "order_date": "2020-01-27",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 96.1
+  },
+  {
+    "order_id": "ord_00458",
+    "customer_id": "cust_0046",
+    "order_date": "2021-09-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 404.8
+  },
+  {
+    "order_id": "ord_00459",
+    "customer_id": "cust_0046",
+    "order_date": "2024-03-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 164.96
+  },
+  {
+    "order_id": "ord_00460",
+    "customer_id": "cust_0046",
+    "order_date": "2017-01-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 81.68
+  },
+  {
+    "order_id": "ord_00461",
+    "customer_id": "cust_0047",
+    "order_date": "2017-03-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 290.54
+  },
+  {
+    "order_id": "ord_00462",
+    "customer_id": "cust_0047",
+    "order_date": "2021-11-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 326.97
+  },
+  {
+    "order_id": "ord_00463",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-01-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 307.58
+  },
+  {
+    "order_id": "ord_00464",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-09-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 246.41
+  },
+  {
+    "order_id": "ord_00465",
+    "customer_id": "cust_0047",
+    "order_date": "2020-08-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 78.76
+  },
+  {
+    "order_id": "ord_00466",
+    "customer_id": "cust_0047",
+    "order_date": "2017-10-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 123.85
+  },
+  {
+    "order_id": "ord_00467",
+    "customer_id": "cust_0047",
+    "order_date": "2019-03-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 61.74
+  },
+  {
+    "order_id": "ord_00468",
+    "customer_id": "cust_0047",
+    "order_date": "2021-01-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 97.6
+  },
+  {
+    "order_id": "ord_00469",
+    "customer_id": "cust_0047",
+    "order_date": "2024-05-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 312.21
+  },
+  {
+    "order_id": "ord_00470",
+    "customer_id": "cust_0047",
+    "order_date": "2021-06-29",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 435.28
+  },
+  {
+    "order_id": "ord_00471",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-11-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 118.03
+  },
+  {
+    "order_id": "ord_00472",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-05-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 489.5
+  },
+  {
+    "order_id": "ord_00473",
+    "customer_id": "cust_0048",
+    "order_date": "2024-04-12",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 277.15
+  },
+  {
+    "order_id": "ord_00474",
+    "customer_id": "cust_0048",
+    "order_date": "2024-12-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 77.45
+  },
+  {
+    "order_id": "ord_00475",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2014-07-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 239.91
+  },
+  {
+    "order_id": "ord_00476",
+    "customer_id": "cust_0048",
+    "order_date": "2018-03-02",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 19.93
+  },
+  {
+    "order_id": "ord_00477",
+    "customer_id": "cust_0048",
+    "order_date": "2016-11-19",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 246.38
+  },
+  {
+    "order_id": "ord_00478",
+    "customer_id": "cust_0048",
+    "order_date": "2017-12-05",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 197.5
+  },
+  {
+    "order_id": "ord_00479",
+    "customer_id": "cust_0048",
+    "order_date": "2024-01-06",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 6",
+    "amount": 305.22
+  },
+  {
+    "order_id": "ord_00480",
+    "customer_id": "cust_0048",
+    "order_date": "2024-05-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 1",
+    "amount": 82.45
+  },
+  {
+    "order_id": "ord_00481",
+    "customer_id": "cust_0049",
+    "order_date": "2017-09-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 157.24
+  },
+  {
+    "order_id": "ord_00482",
+    "customer_id": "cust_0049",
+    "order_date": "2021-05-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 83.94
+  },
+  {
+    "order_id": "ord_00483",
+    "customer_id": "cust_0049",
+    "order_date": "2021-09-26",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 3",
+    "amount": 338.82
+  },
+  {
+    "order_id": "ord_00484",
+    "customer_id": "cust_0049",
+    "order_date": "2016-08-10",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 246.0
+  },
+  {
+    "order_id": "ord_00485",
+    "customer_id": "cust_0049",
+    "order_date": "2019-05-23",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 5",
+    "amount": 283.88
+  },
+  {
+    "order_id": "ord_00486",
+    "customer_id": "cust_0049",
+    "order_date": "2023-04-03",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 373.74
+  },
+  {
+    "order_id": "ord_00487",
+    "customer_id": "cust_0049",
+    "order_date": "2018-08-22",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 423.14
+  },
+  {
+    "order_id": "ord_00488",
+    "customer_id": "cust_0049",
+    "order_date": "2018-10-11",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 323.3
+  },
+  {
+    "order_id": "ord_00489",
+    "customer_id": "cust_0049",
+    "order_date": "2025-02-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 8",
+    "amount": 491.64
+  },
+  {
+    "order_id": "ord_00490",
+    "customer_id": "cust_0049",
+    "order_date": "2024-02-09",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 302.9
+  },
+  {
+    "order_id": "ord_00491",
+    "customer_id": "cust_0050",
+    "order_date": "2020-02-28",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 179.61
+  },
+  {
+    "order_id": "ord_00492",
+    "customer_id": "cust_0050",
+    "order_date": "2025-06-15",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 427.99
+  },
+  {
+    "order_id": "ord_00493",
+    "customer_id": "cust_0050",
+    "order_date": "2025-09-30",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 344.29
+  },
+  {
+    "order_id": "ord_00494",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2013-10-08",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 363.23
+  },
+  {
+    "order_id": "ord_00495",
+    "customer_id": "cust_0050",
+    "order_date": "2020-12-13",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 10",
+    "amount": 300.8
+  },
+  {
+    "order_id": "ord_00496",
+    "customer_id": "cust_0050",
+    "order_date": "2016-07-01",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 4",
+    "amount": 257.02
+  },
+  {
+    "order_id": "ord_00497",
+    "customer_id": "cust_0050",
+    "order_date": "2019-09-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 368.22
+  },
+  {
+    "order_id": "ord_00498",
+    "customer_id": "cust_0050",
+    "order_date": "2024-09-17",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 2",
+    "amount": 179.05
+  },
+  {
+    "order_id": "ord_00499",
+    "customer_id": "ANONYMIZED",
+    "order_date": "2015-09-20",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 9",
+    "amount": 196.7
+  },
+  {
+    "order_id": "ord_00500",
+    "customer_id": "cust_0050",
+    "order_date": "2024-12-04",
+    "customer_email": "[MASKED]",
+    "customer_phone": "[MASKED]",
+    "product": "Product 7",
+    "amount": 407.95
+  }
+]

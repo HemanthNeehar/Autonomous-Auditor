@@ -1,0 +1,15 @@
+google-cloud-aiplatform[agent_engines,adk,evaluation]>=1.112.0
+google-adk>=1.32.0
+google-genai>=1.70.0
+pydantic>=2.10.0
+python-dotenv
+httpx
+tenacity
+fastapi>=0.124.1
+uvicorn[standard]>=0.46.0
+toolbox-core
+toolbox-adk
+google-cloud-bigquery
+google-cloud-discoveryengine
+pypdf>=5.1.0
+a2a-sdk[http-server]==0.3.26
