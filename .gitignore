@@ -18,13 +18,6 @@ share/
 .env.production
 .env.*.local
 
-# === Personal Reference Guides & Temp Configs ===
-A2A/demo_pitch_script.md
-A2A/submission_description.md
-walkthrough.md
-USER_SIM_GUIDE.md
-config/tools.yaml
-
 # === Python Cache & Artifacts ===
 __pycache__/
 *.pyc
