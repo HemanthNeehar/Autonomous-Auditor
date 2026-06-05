@@ -30,7 +30,7 @@ flowchart TD
         Synthesizer["SynthesisAgent (merger_agent)"]
     end
 
-    subgraph Specialist Parallel Agents
+    subgraph "Specialist Parallel Agents"
         PII["pii_specialist"]
         RTB["rtbf_expert"]
         RET["retention_policy_checker"]
@@ -46,15 +46,26 @@ flowchart TD
 
     R --> RFR
     RFR -- "Broadcasting Compliance Plan" --> Coord
-    Coord --> PII & RTB & RET & ORP & POL
+    
+    Coord --> PII
+    Coord --> RTB
+    Coord --> RET
+    Coord --> ORP
+    Coord --> POL
     
     PII -- "Checks PII Violations" --> BQ
     RTB -- "Queries Deleted Statuses" --> BQ
     RET -- "Scans 10-Year Boundaries" --> BQ
     ORP -- "Finds Relational Orphans" --> BQ
-    POL -- "Dual RAG Lookup" --> Disc & GCS
+    POL -- "Dual RAG Lookup" --> Disc
+    POL -- "Dual RAG Lookup" --> GCS
 
-    PII & RTB & RET & ORP & POL -- "Audit Output Reports" --> Synthesizer
+    PII --> Synthesizer
+    RTB --> Synthesizer
+    RET --> Synthesizer
+    ORP --> Synthesizer
+    POL --> Synthesizer
+    
     Synthesizer -- "Final cited 5-point Audit Report" --> Output["Report (Markdown)"]
 ```
 
