@@ -227,11 +227,9 @@ def upload_to_bigquery(
     print(f"Uploaded {len(json_data)} rows to BigQuery table {dataset_id}.{table_id}")
 
 
-def generate_golden_set(scenario_name: str, config: dict):
-    print(f"--- Generating scenario: {scenario_name} ---")
-    scenario_path = GOLDEN_SETS_DIR / scenario_name
-    scenario_path.mkdir(exist_ok=True)
-
+def generate_and_save_scenario(scenario_name: str, config: dict, target_dir: Path, upload_bq: bool = True, custom_customer_table: str = None, custom_order_table: str = None):
+    print(f"--- Generating scenario: {scenario_name} in {target_dir} ---")
+    
     # Generate base data
     customers = generate_customer_data(config.get("num_customers", NUM_CUSTOMERS))
     orders = generate_order_data(
@@ -278,35 +276,54 @@ def generate_golden_set(scenario_name: str, config: dict):
     )
     golden_violations["orphaned_records"].extend(orphaned_records_found)
 
+    target_dir.mkdir(exist_ok=True, parents=True)
+
     # Save data locally
-    with open(scenario_path / "customer_db.json", "w") as f:
+    with open(target_dir / "customer_db.json", "w") as f:
         json.dump(customers, f, indent=2)
-    with open(scenario_path / "orders_db.json", "w") as f:
+    with open(target_dir / "orders_db.json", "w") as f:
         json.dump(orders, f, indent=2)
 
     # Save golden violations
-    with open(scenario_path / "golden_violations.json", "w") as f:
+    with open(target_dir / "golden_violations.json", "w") as f:
         json.dump(golden_violations, f, indent=2)
 
-    print(f"Saved synthetic data and golden violations for {scenario_name} to {scenario_path}")
+    print(f"Saved synthetic data and golden violations for {scenario_name} to {target_dir}")
 
-    # Upload to BigQuery (dynamic table names for each scenario)
-    bq_customer_table_id = f"{scenario_name.replace('-', '_')}_customers"
-    bq_order_table_id = f"{scenario_name.replace('-', '_')}_orders"
+    # Attempt BigQuery upload if requested
+    if upload_bq and os.getenv("GOOGLE_CLOUD_PROJECT"):
+        try:
+            # Table IDs
+            bq_customer_table_id = custom_customer_table or f"{scenario_name.replace('-', '_')}_customers"
+            bq_order_table_id = custom_order_table or f"{scenario_name.replace('-', '_')}_orders"
 
-    # Ensure the BigQuery dataset exists
-    client = bigquery.Client(project=PROJECT_ID)
-    try:
-        client.get_dataset(DATASET_ID)
-    except Exception:
-        client.create_dataset(DATASET_ID)
-        print(f"Created BigQuery dataset: {DATASET_ID}")
+            # Ensure the BigQuery dataset exists
+            client = bigquery.Client(project=PROJECT_ID)
+            try:
+                client.get_dataset(DATASET_ID)
+            except Exception:
+                client.create_dataset(DATASET_ID)
+                print(f"Created BigQuery dataset: {DATASET_ID}")
 
-    upload_to_bigquery(customers, bq_customer_table_id)
-    upload_to_bigquery(orders, bq_order_table_id)
-    print(
-        f"Uploaded data for {scenario_name} to BigQuery tables: {bq_customer_table_id}, {bq_order_table_id}"
+            upload_to_bigquery(customers, bq_customer_table_id)
+            upload_to_bigquery(orders, bq_order_table_id)
+            print(f"Uploaded data for {scenario_name} to BigQuery tables: {bq_customer_table_id}, {bq_order_table_id}")
+            return True
+        except Exception as bq_err:
+            print(f"[WARN] Graceful Fallback: BigQuery upload failed for {scenario_name}: {bq_err}")
+            return False
+    return False
+
+
+def generate_golden_set(scenario_name: str, config: dict):
+    scenario_path = GOLDEN_SETS_DIR / scenario_name
+    generate_and_save_scenario(
+        scenario_name=scenario_name,
+        config=config,
+        target_dir=scenario_path,
+        upload_bq=True
     )
+
 
 
 # Define golden set scenarios (20-50 cases in total, this is a good start)

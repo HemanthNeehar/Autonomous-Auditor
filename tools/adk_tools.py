@@ -449,6 +449,9 @@ def _run_bq_query(query: str) -> list[dict]:
 
 # Global method to get results from Orders table
 def _fetch_orders_from_bigquery() -> list[dict]:
+    if os.getenv("DB_MODE", "local") == "local":
+        import data.data_manager as dm
+        return dm.ORDER_DB
     project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "your-google-cloud-project-id")
     dataset_id = DATASET_ID  # Use constant
     order_table_name = os.getenv("AUDIT_ORDER_TABLE", "orders")
@@ -458,6 +461,9 @@ def _fetch_orders_from_bigquery() -> list[dict]:
 
 # Global method to get results from Customers table
 def _fetch_customers_from_bigquery() -> list[dict]:
+    if os.getenv("DB_MODE", "local") == "local":
+        import data.data_manager as dm
+        return dm.CUSTOMER_DB
     project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "your-google-cloud-project-id")
     dataset_id = DATASET_ID  # Use constant
     customer_table_name = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
@@ -554,6 +560,10 @@ def find_customers_by_status(status: str) -> list[dict]:
     matching a given status ('active' or 'forgotten').
     """
     validated = CustomerStatusInput(status=status)
+    if os.getenv("DB_MODE", "local") == "local":
+        import data.data_manager as dm
+        return [c for c in dm.CUSTOMER_DB if c.get("status") == validated.status]
+
     customer_table_name = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
 
     query = f"""
@@ -568,6 +578,11 @@ def get_orders_by_customer_id(customer_id: str) -> list[dict]:
     """Retrieves orders for a specific customer or a comma-separated list of customer IDs from BigQuery."""
 
     validated = CustomerIdInput(customer_id=customer_id)
+    if os.getenv("DB_MODE", "local") == "local":
+        import data.data_manager as dm
+        ids = [i.strip() for i in validated.customer_id.split(",") if i.strip()]
+        return [o for o in dm.ORDER_DB if o.get("customer_id") in ids]
+
     order_table_name = os.getenv("AUDIT_ORDER_TABLE", "orders")
 
     ids = [i.strip() for i in validated.customer_id.split(",") if i.strip()]
@@ -654,6 +669,22 @@ def find_retention_policy_violations(max_age_days: int) -> list[dict]:
 
 def find_orphaned_orders() -> list[dict]:
     """Scans BigQuery to find orders with invalid customer IDs."""
+    if os.getenv("DB_MODE", "local") == "local":
+        import data.data_manager as dm
+        valid_cust_ids = {c["customer_id"] for c in dm.CUSTOMER_DB}
+        violations = []
+        for o in dm.ORDER_DB:
+            cid = o.get("customer_id")
+            if cid not in valid_cust_ids and cid not in ("ANONYMIZED", "ANONYMISED"):
+                violations.append(
+                    {
+                        "order_id": o.get("order_id"),
+                        "customer_id": cid,
+                        "violation_type": "Orphaned Record",
+                    }
+                )
+        return violations
+
     order_table_name = os.getenv("AUDIT_ORDER_TABLE", "orders")
     customer_table_name = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
     project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "your-google-cloud-project-id")

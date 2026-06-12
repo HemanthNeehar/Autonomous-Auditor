@@ -24,6 +24,7 @@ MCP_TOOLBOX_URL = os.getenv("MCP_TOOLBOX_URL")
 # Initialize Vertex AI
 vertexai.init(project=PROJECT_ID, location=LOCATION, staging_bucket=STAGING_BUCKET)
 
+
 def _a2a_agent_card_json_for_deploy(agent: Any) -> str:
     """Serialize A2aAgent.agent_card for class_methods/ Agent Registry.
 
@@ -47,6 +48,7 @@ def _a2a_agent_card_json_for_deploy(agent: Any) -> str:
             return json.dumps(dict_fn())
 
     return json_format.MessageToJson(card)
+
 
 def _class_methods_for_auditor_a2a() -> list[dict[str, Any]]:
     """Mirror _generate_class_methods_spec_or_raise with Pydantic safe a2a_agent_card."""
@@ -92,6 +94,7 @@ def _class_methods_for_auditor_a2a() -> list[dict[str, Any]]:
 
     return [u._to_dict(s) for s in class_methods_spec]
 
+
 # Create temporary requirements file inside runtime/ package so it gets uploaded
 reqs = [
     "google-cloud-aiplatform[agent_engines,evaluation]>=1.112.0",
@@ -105,14 +108,32 @@ reqs = [
     "google-genai>=1.70.0",
     "google-cloud-bigquery",
     "google-cloud-firestore",
-    "a2a-sdk[http-server]==0.3.26"
+    "a2a-sdk[http-server]==0.3.26",
+    "opentelemetry-instrumentation-fastapi",
+    "opentelemetry-instrumentation-google-genai",
+    "opentelemetry-instrumentation-httpx",
+    "opentelemetry-instrumentation-grpc",
 ]
 reqs_path = Path("runtime/requirements_deploy.txt")
 reqs_path.write_text("\n".join(reqs))
 
 # Prepare the deployment configuration dictionary
 config: dict[str, Any] = {
-    "source_packages": ["agents", "ai_agents_adk", "tools", "eval", "services", "runtime", "A2A", "regulation.txt", "customer_db.json", "orders_db.json", "data/data_manager.py", "data/compliance_manual.txt", "data/__init__.py"],
+    "source_packages": [
+        "agents",
+        "ai_agents_adk",
+        "tools",
+        "eval",
+        "services",
+        "runtime",
+        "A2A",
+        "regulation.txt",
+        "customer_db.json",
+        "orders_db.json",
+        "data/data_manager.py",
+        "data/compliance_manual.txt",
+        "data/__init__.py",
+    ],
     "entrypoint_module": "runtime.agent_engine_entry",
     "entrypoint_object": "a2a_agent",
     "requirements_file": "runtime/requirements_deploy.txt",
@@ -123,8 +144,12 @@ config: dict[str, Any] = {
         "MCP_TOOLBOX_URL": MCP_TOOLBOX_URL,
         "GOOGLE_CLOUD_LOCATION": LOCATION,
         "GEMINI_MODEL": "gemini-2.5-flash",
-        "FIRESTORE_DATABASE_ID": os.getenv("FIRESTORE_DATABASE_ID", "ai-studio-c65c8c94-4557-4ed7-87bc-594554053988"),
-    }
+        "FIRESTORE_DATABASE_ID": os.getenv(
+            "FIRESTORE_DATABASE_ID", "ai-studio-c65c8c94-4557-4ed7-87bc-594554053988"
+        ),
+        "GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY": "true",
+        "OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT": "true",
+    },
 }
 
 if SERVICE_ACCOUNT:

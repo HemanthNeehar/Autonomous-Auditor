@@ -100,6 +100,10 @@ class DatabaseStats(BaseModel):
     newest_order_date: str
 
 
+class GenerateScenarioRequest(BaseModel):
+    scenario: str
+
+
 # =========================================================================
 #  STATIC FILE ROUTES
 # =========================================================================
@@ -189,6 +193,10 @@ async def get_database_stats():
             newest_order_date=max(order_dates).strftime("%Y-%m-%d") if order_dates else "N/A",
         )
 
+    # If DB_MODE is local, skip BigQuery attempt entirely
+    if os.getenv("DB_MODE", "local") == "local":
+        return _local_stats()
+
     # Try BigQuery first; fall back to local files if BQ is unreachable
     try:
         loop = asyncio.get_event_loop()
@@ -209,6 +217,77 @@ async def reload_data():
     """Reload data files from disk (e.g. after regenerating with generate_data.py)."""
     load_data()
     return {"status": "ok", "customers": len(CUSTOMER_DB), "orders": len(ORDER_DB)}
+
+
+@app.get("/api/data/customers")
+async def get_customers(limit: int = 100):
+    """Return the active customer records, limited to first N entries by default."""
+    if limit > 0:
+        return CUSTOMER_DB[:limit]
+    return CUSTOMER_DB
+
+
+@app.get("/api/data/orders")
+async def get_orders(limit: int = 100):
+    """Return the active order records, limited to first N entries by default."""
+    if limit > 0:
+        return ORDER_DB[:limit]
+    return ORDER_DB
+
+
+@app.get("/api/data/customers/download")
+async def download_customers():
+    """Download the full customer_db.json file."""
+    return FileResponse(SRC_DIR / "customer_db.json", media_type="application/json", filename="customer_db.json")
+
+
+@app.get("/api/data/orders/download")
+async def download_orders():
+    """Download the full orders_db.json file."""
+    return FileResponse(SRC_DIR / "orders_db.json", media_type="application/json", filename="orders_db.json")
+
+
+@app.post("/api/data/generate")
+async def generate_scenario_data(payload: GenerateScenarioRequest):
+    """
+    Generate synthetic customer and order data for a specific scenario,
+    overwrite local customer_db.json and orders_db.json, and call load_data().
+    """
+    from data.generate_golden_sets import golden_set_scenarios, generate_and_save_scenario
+    
+    scenario = payload.scenario.strip()
+    if scenario not in golden_set_scenarios:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unknown scenario '{scenario}'. Available scenarios: {list(golden_set_scenarios.keys())}"
+        )
+    
+    config = golden_set_scenarios[scenario]
+    upload_bq = (os.getenv("DB_MODE", "local") != "local")
+    custom_customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers") if upload_bq else None
+    custom_order_table = os.getenv("AUDIT_ORDER_TABLE", "orders") if upload_bq else None
+    
+    loop = asyncio.get_event_loop()
+    success_bq = await loop.run_in_executor(
+        _executor,
+        generate_and_save_scenario,
+        scenario,
+        config,
+        SRC_DIR,
+        upload_bq,
+        custom_customer_table,
+        custom_order_table
+    )
+    
+    load_data()
+    
+    return {
+        "status": "ok",
+        "scenario": scenario,
+        "customers_count": len(CUSTOMER_DB),
+        "orders_count": len(ORDER_DB),
+        "bq_sync": success_bq if upload_bq else False
+    }
 
 
 # =========================================================================
@@ -322,13 +401,26 @@ async def run_agent_audit():
                 loop = asyncio.get_event_loop()
 
                 def _run_stream():
-                    """Sync worker: pulls chunks from stream_query and puts them on the queue."""
+                    """Sync worker: pulls chunks from stream_query or runs query() as fallback."""
                     try:
-                        for chunk in remote_agent.stream_query(
-                            message=AUDIT_PROMPT,
-                            user_id="system",
-                        ):
-                            loop.call_soon_threadsafe(queue.put_nowait, chunk)
+                        if hasattr(remote_agent, "stream_query"):
+                            for chunk in remote_agent.stream_query(
+                                message=AUDIT_PROMPT,
+                                user_id="system",
+                            ):
+                                loop.call_soon_threadsafe(queue.put_nowait, chunk)
+                        elif hasattr(remote_agent, "query"):
+                            print("[UI] stream_query not found on remote_agent. Falling back to query().")
+                            # Put a thought update on the queue to inform the user
+                            loop.call_soon_threadsafe(
+                                queue.put_nowait,
+                                "🔄 Contacting Remote Agent Engine (this may take up to a minute)..."
+                            )
+                            # Call the standard query method exposed by PlaygroundCompatibleA2aAgent
+                            res = remote_agent.query(input=AUDIT_PROMPT)
+                            loop.call_soon_threadsafe(queue.put_nowait, res)
+                        else:
+                            raise AttributeError("Remote agent has neither 'stream_query' nor 'query' methods.")
                     except Exception as stream_err:
                         loop.call_soon_threadsafe(queue.put_nowait, {"_error": str(stream_err)})
                     finally:

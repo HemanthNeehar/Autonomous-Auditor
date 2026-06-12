@@ -6,6 +6,7 @@
   <title>Autonomous Compliance Auditor — Retail Data Intelligence</title>
   <meta name="description" content="AI-powered autonomous compliance auditor for detecting PII leaks, RTBF violations, data retention failures, and orphaned records in retail systems."/>
   <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 <div class="grid-bg"></div>
@@ -99,6 +100,35 @@
     </div>
   </div>
 
+  <!-- Scenario Data Generator Panel -->
+  <div class="audit-panel" style="margin-top:-10px; margin-bottom:30px;">
+    <div class="panel-header">
+      <div class="panel-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Scenario Data Generator
+      </div>
+      <span style="font-size:12px;color:var(--text-muted)">Generate compliance test cases and sync BQ (if active)</span>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <select id="select-scenario" style="flex:1;min-width:200px;background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 14px;font-family:inherit;font-size:13px;outline:none;cursor:pointer">
+        <option value="clean_data">Clean Data (Fully Compliant)</option>
+        <option value="pii_leak_only">PII Leaks Only</option>
+        <option value="pii_integrity_only">PII Integrity Failures Only</option>
+        <option value="rtbf_only">RTBF Violations Only</option>
+        <option value="retention_only">Retention Policy Failures Only</option>
+        <option value="orphaned_only">Orphaned Records Only</option>
+        <option value="mixed_violations_low">Mixed Violations (Low Severity)</option>
+        <option value="mixed_violations_high">Mixed Violations (High Severity)</option>
+        <option value="extreme_edge_all_forgotten">Extreme: All Customers Forgotten</option>
+        <option value="extreme_edge_all_old_not_anonymized">Extreme: All Old Orders Retention Violations</option>
+        <option value="extreme_edge_many_orphans">Extreme: Many Orphaned Orders</option>
+      </select>
+      <button id="btn-generate" onclick="generateScenario()" style="background:linear-gradient(135deg, var(--accent), var(--cyan));border:none;border-radius:8px;color:#fff;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s">
+        Generate & Load Dataset
+      </button>
+    </div>
+  </div>
+
   <!-- Agent Activity Log -->
   <div class="agent-log" style="margin-bottom:30px">
     <div class="panel-header" style="padding:14px 22px;border-bottom:1px solid var(--border)">
@@ -143,6 +173,31 @@
         </thead>
         <tbody id="violations-tbody"></tbody>
       </table>
+    </div>
+  </div>
+
+  <!-- Database Inspector Panel -->
+  <div class="regulation-panel">
+    <div class="panel-header" style="padding:14px 22px;border-bottom:1px solid var(--border)">
+      <div class="panel-title" style="font-size:14px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        Database Inspector (Active JSON Records)
+      </div>
+      <div style="display:flex;gap:10px">
+        <button onclick="inspectDbTab('customers')" id="tab-btn-customers" style="background:var(--bg-glass);border:1px solid var(--border);color:var(--text-primary);padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px;font-family:inherit" class="active-tab">Customers</button>
+        <button onclick="inspectDbTab('orders')" id="tab-btn-orders" style="background:none;border:1px solid var(--border);color:var(--text-muted);padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px;font-family:inherit">Orders</button>
+        <button onclick="toggleDbInspector()" style="background:none;border:1px solid var(--border);color:var(--text-secondary);padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px;font-family:inherit">Toggle View</button>
+      </div>
+    </div>
+    <div class="regulation-body hidden" id="db-inspector-body">
+      <div style="display:flex;justify-content:space-between;margin-bottom:10px;font-size:12px;color:var(--text-muted)">
+        <span id="db-inspector-info">Showing first 100 customer records.</span>
+        <div>
+          <a href="#" id="db-download-link" target="_blank" style="color:var(--cyan);text-decoration:none;margin-right:15px">📥 Download Full JSON</a>
+          <a href="#" onclick="copyInspectorData(); return false;" style="color:var(--accent-light);text-decoration:none">📋 Copy to Clipboard</a>
+        </div>
+      </div>
+      <pre style="margin:0;max-height:400px;overflow-y:auto;background:rgba(0,0,0,0.2);padding:15px;border-radius:6px;border:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:12px;color:#c9d1d9" id="db-inspector-pre">Loading...</pre>
     </div>
   </div>
 
@@ -366,10 +421,11 @@ async function runAgentAudit() {
                shield.classList.add('passed');
                shield.classList.remove('failed');
                
-               // Show report as a text card spanning the grid with the green passed border!
+               // Show report as a text card parsing Markdown!
                const grid = document.getElementById('results-grid');
                grid.classList.remove('hidden');
-               grid.innerHTML = `<div class="result-card passed" style="grid-column: 1 / -1; padding: 25px; white-space: pre-wrap; font-family: 'Inter', sans-serif; line-height: 1.6;">${event.content}</div>`;
+               const renderedHtml = marked.parse(event.content);
+               grid.innerHTML = `<div class="result-card passed markdown-body" style="grid-column: 1 / -1; padding: 25px; font-family: 'Inter', sans-serif; line-height: 1.6;">${renderedHtml}</div>`;
             } else if (event.type === 'error') {
                log('ERR', event.content, 'error');
             }
@@ -518,6 +574,92 @@ function setStatus(text) {
 
 function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
+}
+
+// --- Scenario & Database Inspector Helpers ---
+let currentInspectorTab = 'customers';
+let isInspectorVisible = false;
+
+async function generateScenario() {
+  const select = document.getElementById('select-scenario');
+  const scenario = select.value;
+  const btn = document.getElementById('btn-generate');
+  btn.disabled = true;
+  btn.textContent = 'Generating...';
+  log('SYS', `Requesting data generation for scenario: "${scenario}"...`, 'action');
+  setStatus('Generating scenario...');
+  
+  try {
+    const res = await fetch(`${API}/api/data/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ scenario: scenario })
+    });
+    const data = await res.json();
+    log('SYS', `Scenario generated successfully! Customers: ${data.customers_count}, Orders: ${data.orders_count}. BQ synced: ${data.bq_sync}`, 'success');
+    
+    // Reload statistics dashboard
+    await loadStats();
+    // Reload current active inspector tab if it is open
+    if (isInspectorVisible) {
+      await inspectDbTab(currentInspectorTab);
+    }
+    
+    setStatus('System Ready');
+  } catch (e) {
+    log('ERR', `Failed to generate scenario data: ${e.message}`, 'error');
+    setStatus('Error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Generate & Load Dataset';
+  }
+}
+
+async function inspectDbTab(tab) {
+  currentInspectorTab = tab;
+  
+  // Update tab button styles
+  document.getElementById('tab-btn-customers').className = tab === 'customers' ? 'active-tab' : '';
+  document.getElementById('tab-btn-customers').style.color = tab === 'customers' ? '#fff' : 'var(--text-muted)';
+  document.getElementById('tab-btn-orders').className = tab === 'orders' ? 'active-tab' : '';
+  document.getElementById('tab-btn-orders').style.color = tab === 'orders' ? '#fff' : 'var(--text-muted)';
+  
+  const info = document.getElementById('db-inspector-info');
+  const dlLink = document.getElementById('db-download-link');
+  const pre = document.getElementById('db-inspector-pre');
+  
+  info.textContent = `Loading active ${tab} records...`;
+  pre.textContent = 'Loading...';
+  
+  try {
+    const res = await fetch(`${API}/api/data/${tab}?limit=100`);
+    const records = await res.json();
+    
+    info.textContent = `Showing first ${records.length} ${tab} records.`;
+    dlLink.href = `${API}/api/data/${tab}/download`;
+    pre.textContent = JSON.stringify(records, null, 2);
+  } catch (e) {
+    info.textContent = `Failed to load ${tab} records.`;
+    pre.textContent = `Error: ${e.message}`;
+  }
+}
+
+function toggleDbInspector() {
+  const body = document.getElementById('db-inspector-body');
+  body.classList.toggle('hidden');
+  isInspectorVisible = !body.classList.contains('hidden');
+  if (isInspectorVisible) {
+    inspectDbTab(currentInspectorTab);
+  }
+}
+
+function copyInspectorData() {
+  const pre = document.getElementById('db-inspector-pre');
+  navigator.clipboard.writeText(pre.textContent).then(() => {
+    log('SYS', 'Copied inspector view to clipboard!', 'success');
+  }).catch(err => {
+    log('ERR', 'Failed to copy to clipboard: ' + err.message, 'error');
+  });
 }
 
 // --- Init ---

@@ -417,3 +417,90 @@ main {
 
 /* Hidden */
 .hidden { display:none !important; }
+
+/* Markdown Report Styling Overrides */
+.markdown-body h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+.markdown-body h2:first-of-type {
+  margin-top: 0;
+}
+.markdown-body h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: var(--accent-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.markdown-body h3::before {
+  content: '▪';
+  color: var(--cyan);
+}
+.markdown-body p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.markdown-body ul, .markdown-body ol {
+  margin-left: 20px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.markdown-body li {
+  margin-bottom: 5px;
+}
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.markdown-body th {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 10px 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  text-align: left;
+}
+.markdown-body td {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: inherit;
+}
+.markdown-body tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.01);
+}
+.markdown-body code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: var(--cyan);
+}
+.markdown-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Database Inspector Tabs */
+.active-tab {
+  background: linear-gradient(135deg, var(--accent), var(--cyan)) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 0 10px rgba(99,102,241,0.4);
+}

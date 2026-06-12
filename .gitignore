@@ -65,3 +65,10 @@ data/compliance_downloads/*
 *.db
 *.sqlite3
 sources.txt
+
+# === User Reference & Storyboard Files ===
+A2A/demo_pitch_script.md
+A2A/submission_description.md
+USER_SIM_GUIDE.md
+config/tools.yaml
+walkthrough.md

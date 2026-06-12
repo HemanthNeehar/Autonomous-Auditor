@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+.adk
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+agent_env
+demo_env
+golden_sets
+runtime/requirements_deploy.txt
