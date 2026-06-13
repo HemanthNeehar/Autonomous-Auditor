@@ -504,3 +504,9 @@ main {
   border: none !important;
   box-shadow: 0 0 10px rgba(99,102,241,0.4);
 }
+
+/* Styled dropdown options for dark mode compatibility */
+select option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}

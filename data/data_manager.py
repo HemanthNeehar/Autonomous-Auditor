@@ -36,7 +36,7 @@ def load_data():
         
         with open(SRC_DIR / "regulation.txt", "r") as f:
             REGULATION_TEXT = f.read()
-        print(f"✓ Loaded {len(CUSTOMER_DB)} customers, {len(ORDER_DB)} orders")
+        print(f"Loaded {len(CUSTOMER_DB)} customers, {len(ORDER_DB)} orders")
     except FileNotFoundError as e:
         print(f"ERROR: Data file not found: {e}")
 
