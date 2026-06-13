@@ -26,7 +26,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
@@ -290,6 +290,143 @@ async def generate_scenario_data(payload: GenerateScenarioRequest):
     }
 
 
+@app.post("/api/bq/download")
+async def bq_download():
+    """Fetch customer and order records from BigQuery and save them locally."""
+    from google.cloud import bigquery
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "agent-ops-494011")
+    dataset_id = os.getenv("BQ_DATASET", "retail_audit_db")
+    customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
+    order_table = os.getenv("AUDIT_ORDER_TABLE", "orders")
+
+    def _download():
+        client = bigquery.Client(project=project_id)
+        
+        # Download customers
+        cust_query = f"SELECT * FROM `{project_id}.{dataset_id}.{customer_table}`"
+        cust_rows = [dict(row) for row in client.query(cust_query).result()]
+        
+        # Download orders
+        ord_query = f"SELECT * FROM `{project_id}.{dataset_id}.{order_table}`"
+        ord_rows = [dict(row) for row in client.query(ord_query).result()]
+        
+        # Serialize datetime fields to string format in orders
+        from datetime import date, datetime
+        for o in ord_rows:
+            for k, v in o.items():
+                if isinstance(v, (datetime, date)):
+                    o[k] = v.isoformat()
+                    
+        # Save locally
+        with open(SRC_DIR / "customer_db.json", "w") as f:
+            json.dump(cust_rows, f, indent=2)
+        with open(SRC_DIR / "orders_db.json", "w") as f:
+            json.dump(ord_rows, f, indent=2)
+            
+        return len(cust_rows), len(ord_rows)
+
+    try:
+        loop = asyncio.get_event_loop()
+        c_count, o_count = await loop.run_in_executor(_executor, _download)
+        load_data()
+        return {
+            "status": "ok",
+            "customers_count": c_count,
+            "orders_count": o_count,
+            "message": "Successfully downloaded and synchronized data from BigQuery."
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"BigQuery download failed: {str(e)}. Please check your GCP credentials and table configuration."
+        )
+
+
+@app.post("/api/bq/upload")
+async def bq_upload():
+    """Upload local customer_db.json and orders_db.json back to BigQuery."""
+    from google.cloud import bigquery
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "agent-ops-494011")
+    dataset_id = os.getenv("BQ_DATASET", "retail_audit_db")
+    customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
+    order_table = os.getenv("AUDIT_ORDER_TABLE", "orders")
+
+    def _upload():
+        client = bigquery.Client(project=project_id)
+        
+        # Read local JSONs
+        with open(SRC_DIR / "customer_db.json") as f:
+            customers = json.load(f)
+        with open(SRC_DIR / "orders_db.json") as f:
+            orders = json.load(f)
+            
+        job_config = bigquery.LoadJobConfig(
+            write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
+        )
+        
+        # Upload customers
+        cust_ref = client.dataset(dataset_id).table(customer_table)
+        cust_job = client.load_table_from_json(customers, cust_ref, job_config=job_config)
+        cust_job.result()
+        
+        # Upload orders
+        ord_ref = client.dataset(dataset_id).table(order_table)
+        ord_job = client.load_table_from_json(orders, ord_ref, job_config=job_config)
+        ord_job.result()
+        
+        return len(customers), len(orders)
+
+    try:
+        loop = asyncio.get_event_loop()
+        c_count, o_count = await loop.run_in_executor(_executor, _upload)
+        return {
+            "status": "ok",
+            "customers_count": c_count,
+            "orders_count": o_count,
+            "message": "Successfully uploaded local database records to BigQuery."
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"BigQuery upload failed: {str(e)}. Please verify table write permissions and GCP environment settings."
+        )
+
+
+@app.post("/api/data/upload")
+async def upload_local_file(type: str, file: UploadFile = File(...)):
+    """Upload customer or order database JSON file from the user's local machine."""
+    if type not in ("customers", "orders"):
+        raise HTTPException(status_code=400, detail="Invalid data type. Must be 'customers' or 'orders'.")
+        
+    filename = "customer_db.json" if type == "customers" else "orders_db.json"
+    target_path = SRC_DIR / filename
+    
+    try:
+        content = await file.read()
+        # Validate that it is proper JSON
+        parsed_json = json.loads(content.decode("utf-8"))
+        if not isinstance(parsed_json, list):
+            raise ValueError("JSON content must be a list of records.")
+            
+        # Write to local file
+        with open(target_path, "w", encoding="utf-8") as f:
+            json.dump(parsed_json, f, indent=2)
+            
+        load_data()
+        
+        return {
+            "status": "ok",
+            "type": type,
+            "records_count": len(parsed_json),
+            "message": f"Successfully uploaded and loaded {filename}."
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Failed to process uploaded JSON file: {str(e)}"
+        )
+
+
 # =========================================================================
 #  AGENTIC AUDIT ENDPOINT  (SSE streaming via ADK Runner)
 # =========================================================================
@@ -319,8 +456,8 @@ async def run_agent_audit():
       { type: "thought"|"tool_call"|"tool_result"|"final_report"|"error", ... }
     """
 
-    # Read configuration from environment
-    AGENT_MODE = os.getenv("AGENT_MODE", "local")  # "local" or "remote"
+    # Force AGENT_MODE to local to ensure dynamic audits run locally on updated JSON files
+    AGENT_MODE = "local"
     AGENT_RESOURCE_NAME = os.getenv("AGENT_RESOURCE_NAME")  # e.g. projects/.../agentEngines/...
     GOOGLE_GENAI_USE_VERTEXAI = os.getenv("GOOGLE_GENAI_USE_VERTEXAI", "false")
 

@@ -100,15 +100,17 @@
     </div>
   </div>
 
-  <!-- Scenario Data Generator Panel -->
+  <!-- Database & Scenario Manager Panel -->
   <div class="audit-panel" style="margin-top:-10px; margin-bottom:30px;">
     <div class="panel-header">
       <div class="panel-title">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        Scenario Data Generator
+        Database & Scenario Manager
       </div>
-      <span style="font-size:12px;color:var(--text-muted)">Generate compliance test cases and sync BQ (if active)</span>
+      <span style="font-size:12px;color:var(--text-muted)">Generate compliance test cases, upload custom files, and sync with BigQuery</span>
     </div>
+    
+    <!-- Row 1: Scenario Generator -->
     <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
       <select id="select-scenario" style="flex:1;min-width:200px;background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 14px;font-family:inherit;font-size:13px;outline:none;cursor:pointer">
         <option value="clean_data">Clean Data (Fully Compliant)</option>
@@ -126,6 +128,24 @@
       <button id="btn-generate" onclick="generateScenario()" style="background:linear-gradient(135deg, var(--accent), var(--cyan));border:none;border-radius:8px;color:#fff;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s">
         Generate & Load Dataset
       </button>
+    </div>
+
+    <!-- Row 2: Database Sync and Local File Upload Actions -->
+    <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <button id="btn-connect-bq" onclick="connectToBQ()" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s;display:flex;align-items:center;gap:6px">
+        ☁️ Connect to BigQuery
+      </button>
+      <button id="btn-upload-bq" onclick="uploadToBQ()" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s;display:flex;align-items:center;gap:6px">
+        🚀 Upload to BigQuery
+      </button>
+      <button id="btn-upload-local-cust" onclick="document.getElementById('input-local-cust').click()" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s;display:flex;align-items:center;gap:6px">
+        📁 Upload Customers JSON
+      </button>
+      <button id="btn-upload-local-ord" onclick="document.getElementById('input-local-ord').click()" style="background:var(--bg-glass);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.3s;display:flex;align-items:center;gap:6px">
+        📁 Upload Orders JSON
+      </button>
+      <input type="file" id="input-local-cust" accept=".json" style="display:none" onchange="handleFileUpload('customers', this)">
+      <input type="file" id="input-local-ord" accept=".json" style="display:none" onchange="handleFileUpload('orders', this)">
     </div>
   </div>
 
@@ -660,6 +680,95 @@ function copyInspectorData() {
   }).catch(err => {
     log('ERR', 'Failed to copy to clipboard: ' + err.message, 'error');
   });
+}
+
+async function connectToBQ() {
+  const btn = document.getElementById('btn-connect-bq');
+  btn.disabled = true;
+  const oldText = btn.textContent;
+  btn.innerHTML = '⚡ Connecting...';
+  log('SYS', 'Requesting table data fetch from BigQuery...', 'action');
+  setStatus('Downloading from BigQuery...');
+  
+  try {
+    const res = await fetch(`${API}/api/bq/download`, { method: 'POST' });
+    const data = await res.json();
+    if (res.ok) {
+      log('SYS', `BigQuery Synchronization Success! Customers: ${data.customers_count}, Orders: ${data.orders_count}.`, 'success');
+      await loadStats();
+      if (isInspectorVisible) {
+        await inspectDbTab(currentInspectorTab);
+      }
+      setStatus('System Ready');
+    } else {
+      throw new Error(data.detail || 'Download failed');
+    }
+  } catch (e) {
+    log('ERR', `BigQuery Download Error: ${e.message}`, 'error');
+    setStatus('Error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '☁️ Connect to BigQuery';
+  }
+}
+
+async function uploadToBQ() {
+  const btn = document.getElementById('btn-upload-bq');
+  btn.disabled = true;
+  const oldText = btn.textContent;
+  btn.innerHTML = '⚡ Uploading...';
+  log('SYS', 'Uploading current local database state to BigQuery...', 'action');
+  setStatus('Uploading to BigQuery...');
+  
+  try {
+    const res = await fetch(`${API}/api/bq/upload`, { method: 'POST' });
+    const data = await res.json();
+    if (res.ok) {
+      log('SYS', `BigQuery Overwrite Success! Synchronized local scenario records to BigQuery tables.`, 'success');
+      setStatus('System Ready');
+    } else {
+      throw new Error(data.detail || 'Upload failed');
+    }
+  } catch (e) {
+    log('ERR', `BigQuery Upload Error: ${e.message}`, 'error');
+    setStatus('Error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🚀 Upload to BigQuery';
+  }
+}
+
+async function handleFileUpload(type, input) {
+  if (!input.files || input.files.length === 0) return;
+  const file = input.files[0];
+  log('SYS', `Parsing and uploading local JSON file: "${file.name}"...`, 'action');
+  setStatus(`Uploading local ${type} JSON...`);
+  
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  try {
+    const res = await fetch(`${API}/api/data/upload?type=${type}`, {
+      method: 'POST',
+      body: formData
+    });
+    const data = await res.json();
+    if (res.ok) {
+      log('SYS', `Local File Upload Success! Loaded ${data.records_count} records for type: ${type}.`, 'success');
+      await loadStats();
+      if (isInspectorVisible) {
+        await inspectDbTab(currentInspectorTab);
+      }
+      setStatus('System Ready');
+    } else {
+      throw new Error(data.detail || 'Upload failed');
+    }
+  } catch (e) {
+    log('ERR', `File Upload Error: ${e.message}`, 'error');
+    setStatus('Error');
+  } finally {
+    input.value = ''; // Reset file input
+  }
 }
 
 // --- Init ---

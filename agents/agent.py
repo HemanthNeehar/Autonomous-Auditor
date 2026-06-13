@@ -70,7 +70,7 @@ coordinator = ParallelAgent(
 merger_agent = Agent(
      name="SynthesisAgent",
      model=gemini_model,
-     instruction="""You are an AI Assistant responsible for combining research findings into a structured report.
+     instruction="""You are an AI Assistant responsible for combining research findings into a structured compliance report.
 
 Your primary task is to synthesize the provided research summaries into a comprehensive report, clearly attributing findings to their source areas. Structure your response using specific headings for each topic as outlined below. Ensure the report is coherent, integrates key points smoothly, and thoroughly adheres to all specified rules and details from the provided context.
 
@@ -78,7 +78,9 @@ Your primary task is to synthesize the provided research summaries into a compre
 
 **Be extremely thorough and preserve all specific numbers, timelines, durations, exceptions, and key compliance terms (e.g., '30 days', '7 years', '72 hours', 'tax records', '3650 days', '10 years', 'k-anonymity', 'differential privacy', 'discovery', 'third party' [strictly in this exact singular form], 'consent', 'anonymized') exactly as written in the policy context and audit outputs in your final report.**
 
-**When reporting violations, explicitly list all `order_id`, `customer_id`, `field`, `value`, `order_date`, `product_name`, `price`, and `violation_type` as they appear in the audit outputs.**
+**Calculate and explicitly display the total counts of identified violations in each category (if any are present). Present them as a Summary Scorecard at the very beginning of the findings.**
+
+**When reporting violations, explicitly list all `order_id`, `customer_id`, `field`, `value`, `order_date`, `product_name`, `price`, and `violation_type` as they appear in the audit outputs. Render them in a clean Markdown Table format for each category to ensure a neat scrollable display in the UI.**
 
 **If a specialist's function is limited and cannot perform a requested action (e.g., verify a "true orphan" status beyond initial identification, or speculate on root causes), you must explicitly state this limitation based on the specialist's defined role and capabilities, as indicated in the policy context or audit outputs.**
 
@@ -96,25 +98,33 @@ This section provides specific findings from specialized agents:
 
 ## Summary of Autonomous Auditor Agent Findings
 
+### Compliance Scorecard (Violation Counts)
+| Category | Violated Rules | Violation Count | Status |
+| :--- | :--- | :--- | :--- |
+| PII Security & Integrity | Rule 1.1, 1.3 | [Specify Count, or 0 if none] | [PASSED / FAILED] |
+| Right to Be Forgotten (RTBF) | Rule 2.1, 2.2 | [Specify Count, or 0 if none] | [PASSED / FAILED] |
+| Data Retention Limits | Rule 3.1, 3.2 | [Specify Count, or 0 if none] | [PASSED / FAILED] |
+| Data Governance & Integrity | Rule 4.1, 4.2 | [Specify Count, or 0 if none] | [PASSED / FAILED] |
+
 ### Policy Interpretation & Best Practices (RAG Insights)
 (Based on Senior Policy Analyst findings from the compliance manual)
 [Synthesize the high-level policy context, standards, and best practices retrieved via RAG. Include specific rules, definitions, timelines (e.g., `30 days`, `7 years`, `3650 days`, `10 years`), exceptions (e.g., `tax records`), and anonymization techniques (e.g., `k-anonymity`, `differential privacy`). Explain what `[MASKED]` and `'ANONYMIZED'` status means for compliance, citing relevant rules (e.g., Rule 1.1, 1.2, 1.3, 2.1, 2.2, 3.1, 3.2, 4.1, 4.2) and sections (e.g., Section 1: PII, Section 2: RTBF, Section 3: Data Retention, Section 4: Data Governance & Integrity) from `REGULATION DOCUMENT: RG-101 (Retail Data Compliance)`. Crucially, you must explicitly describe data breach notification requirements (notifying affected individuals and authorities within 72 hours of discovery) and third-party data sharing rules (requiring explicit consent and data protection agreements) from `compliance_manual.txt` in extensive detail, always preserving the terms 'discovery', 'third party' (strictly in this exact singular form), 'consent', '72 hours', and 'anonymized'.]
 
 ### PII Violations
 (Based on PII Specialist findings)
-[Synthesize and elaborate *only* on the PII findings provided above. List all specific `order_id`, `field`, `value`, and `violation_type` for both PII Integrity Failures and PII Leaks (Unmasked PII), explicitly linking them to the violated rules (Rule 1.1, 1.3).]
+[If no violations: State "No PII violations identified". Otherwise: List counts and present a markdown table with columns: `Order ID`, `Field`, `Redacted Value`, `Violation Type` (Integrity Failure/Leak), `Rule Violated` (Rule 1.1/1.3).]
 
 ### RTBF Violations
 (Based on RTBF Expert findings)
-[Synthesize and elaborate *only* on the RTBF findings provided above. Clearly state the violation(s), including specific `customer_id`, `order_id`, `order_date`, `product_name`, `price`, `customer_email`, and `customer_phone` if available, and attribute them to the relevant RTBF rules (Rule 2.1, 2.2).]
+[If no violations: State "No RTBF violations identified". Otherwise: Present a markdown table with columns: `Customer ID`, `Order ID`, `Violation Type`, `Rule Violated` (Rule 2.1/2.2).]
 
 ### Data Retention Policy Violations
 (Based on Data Retention Policy Specialist findings)
-[Synthesize and elaborate *only* on the Data Retention Policy findings provided above. List all specific `order_id`, `customer_id`, and `order_date` that violate the retention policy, explicitly stating they are older than `3650 days (10 years)` and have not been anonymized as required by Rules 3.1 and 3.2.]
+[If no violations: State "No Data Retention violations identified". Otherwise: Present a markdown table with columns: `Order ID`, `Customer ID`, `Order Date`, `Violation Type`, `Rule Violated` (Rule 3.1/3.2).]
 
 ### Orphaned Records Findings
 (Based on Orphaned Records Specialist findings)
-[Synthesize and elaborate *only* on the Orphaned Records findings provided above. List the specific `customer_id` and `order_id` of each identified orphaned record, explicitly stating it is a violation of Rules 4.1 and 4.2.]
+[If no violations: State "No Orphaned Record violations identified". Otherwise: Present a markdown table with columns: `Order ID`, `Customer ID`, `Violation Type`, `Rule Violated` (Rule 4.1/4.2). Include any stated limitations on verifying true orphan status.]
 
 ### Overall Conclusion
 [Provide a brief (1-2 sentence) concluding statement that connects the findings with the policy context presented above, highlighting the overall compliance status or key areas of concern.]

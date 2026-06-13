@@ -28,6 +28,9 @@ SRC_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SRC_DIR))
 load_dotenv(SRC_DIR / ".env")
 
+from services.redaction_service import redact_records
+
+
 gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 DATASET_ID = "retail_audit_db"
 RAG_DATA_STORE_ID = "auditor-compliance-manual_1779853412403"
@@ -562,7 +565,7 @@ def find_customers_by_status(status: str) -> list[dict]:
     validated = CustomerStatusInput(status=status)
     if os.getenv("DB_MODE", "local") == "local":
         import data.data_manager as dm
-        return [c for c in dm.CUSTOMER_DB if c.get("status") == validated.status]
+        return redact_records([c for c in dm.CUSTOMER_DB if c.get("status") == validated.status])
 
     customer_table_name = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
 
@@ -571,7 +574,7 @@ def find_customers_by_status(status: str) -> list[dict]:
         WHERE status = '{validated.status}'
     """
 
-    return _run_bq_query(query)
+    return redact_records(_run_bq_query(query))
 
 
 def get_orders_by_customer_id(customer_id: str) -> list[dict]:
@@ -581,7 +584,7 @@ def get_orders_by_customer_id(customer_id: str) -> list[dict]:
     if os.getenv("DB_MODE", "local") == "local":
         import data.data_manager as dm
         ids = [i.strip() for i in validated.customer_id.split(",") if i.strip()]
-        return [o for o in dm.ORDER_DB if o.get("customer_id") in ids]
+        return redact_records([o for o in dm.ORDER_DB if o.get("customer_id") in ids])
 
     order_table_name = os.getenv("AUDIT_ORDER_TABLE", "orders")
 
@@ -600,7 +603,7 @@ def get_orders_by_customer_id(customer_id: str) -> list[dict]:
             WHERE customer_id = '{validated.customer_id}'
         """
 
-    return _run_bq_query(query)
+    return redact_records(_run_bq_query(query))
 
 
 def find_pii_compliance_violations() -> list[dict]:
@@ -633,7 +636,7 @@ def find_pii_compliance_violations() -> list[dict]:
                         "violation_type": vtype,
                     }
                 )
-    return violations
+    return redact_records(violations)
 
 
 def find_retention_policy_violations(max_age_days: int) -> list[dict]:
@@ -664,7 +667,7 @@ def find_retention_policy_violations(max_age_days: int) -> list[dict]:
                     "violation_type": "Data Retention Failure",
                 }
             )
-    return violations
+    return redact_records(violations)
 
 
 def find_orphaned_orders() -> list[dict]:
@@ -683,7 +686,7 @@ def find_orphaned_orders() -> list[dict]:
                         "violation_type": "Orphaned Record",
                     }
                 )
-        return violations
+        return redact_records(violations)
 
     order_table_name = os.getenv("AUDIT_ORDER_TABLE", "orders")
     customer_table_name = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
@@ -707,7 +710,7 @@ def find_orphaned_orders() -> list[dict]:
                 "violation_type": "Orphaned Record",
             }
         )
-    return violations
+    return redact_records(violations)
 
 
 # =========================================================================

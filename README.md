@@ -201,8 +201,66 @@ adk optimize . --sampler_config_file_path optimize/sampler_config.json --optimiz
 
 ---
 
+## 🔒 Data Privacy, BigQuery Sync, and Enterprise Production Setup
+
+### 1. Data Privacy & LLM Redaction Layer
+To prevent sensitive corporate or customer PII from being leaked to the Large Language Model (Gemini), the application implements a **Dual-Layer Redaction System**:
+*   **Layer 1 (Local Regex Redaction)**: Identifies and masks standard email and phone number patterns directly in Python.
+*   **Layer 2 (Google Cloud DLP Integration)**: Connects to the GCP Data Loss Prevention (DLP) API to scan, identify, and redact sensitive info types (`EMAIL_ADDRESS`, `PHONE_NUMBER`, and `PERSON_NAME`), replacing them with standard tags like `[EMAIL_ADDRESS]`.
+*   **Safe Reference Mapping**: While sensitive values are fully redacted *before* being passed to the LLM agent, the unique structural identifiers (`order_id`, `customer_id`) are preserved. This allows the Synthesis Agent to generate detailed, scrollable markdown tables referencing the specific record keys where violations occurred, enabling easy human-in-the-loop audit review and approval in the UI without exposing sensitive customer data to the LLM.
+
+#### Configuration:
+Set the following environment variables in your Cloud Run instance or local `.env`:
+```env
+ENABLE_CLOUD_DLP=true
+GOOGLE_CLOUD_PROJECT=your-gcp-project-id
+```
+
+---
+
+### 2. Database & Scenario Manager (UI Console)
+The frontend dashboard exposes four primary database controls for enterprise compliance testing:
+1.  **Generate & Load Dataset**: Select from 11 scenarios (Clean Data, PII Leaks, RTBF Violations, extreme edge cases) to instantly generate synthetic customer/order records locally.
+2.  **☁️ Connect to BigQuery**: Fetches/downloads all records from the remote BigQuery tables (`customers`, `orders`) and writes them locally, syncing the UI statistics and database inspector dynamically.
+3.  **🚀 Upload to BigQuery**: Serializes your current local scenario dataset (generated or uploaded) and pushes it to BigQuery, overwriting/truncating the target tables.
+4.  **📁 Upload JSON Files**: Select and upload custom `customer_db.json` or `orders_db.json` files directly from your computer.
+
+---
+
+### 3. Remote BigQuery Pipelines & Cross-Project IAM Security
+In production, your compliance auditor often runs in a centralized administrative GCP project while accessing transactional databases located in a different business project.
+
+#### Cross-Project BigQuery Setup:
+To establish secure data pipelines:
+1.  **Configure Environment Variables**: Specifying target databases is fully externalized via environment variables on the Cloud Run instance:
+    ```env
+    GOOGLE_CLOUD_PROJECT=target-business-project-id
+    BQ_DATASET=retail_audit_db
+    AUDIT_CUSTOMER_TABLE=customers
+    AUDIT_ORDER_TABLE=orders
+    ```
+2.  **Authorize the Cloud Run Identity**:
+    Locate the Google Service Account assigned to your Cloud Run service (e.g., `autonomous-auditor-sa@my-admin-project.iam.gserviceaccount.com`).
+3.  **Grant Cross-Project IAM Access**:
+    In the target business project (where the BigQuery tables reside), grant the service account permissions to query the data and run BigQuery jobs:
+    ```bash
+    # Grant BigQuery Data Editor on the dataset to allow uploads/downloads
+    gcloud secrets or bigquery datasets add-iam-policy-binding retail_audit_db \
+        --project="target-business-project-id" \
+        --member="serviceAccount:autonomous-auditor-sa@my-admin-project.iam.gserviceaccount.com" \
+        --role="roles/bigquery.dataEditor"
+
+    # Grant BigQuery Job User on the project to allow executing query jobs
+    gcloud projects add-iam-policy-binding "target-business-project-id" \
+        --member="serviceAccount:autonomous-auditor-sa@my-admin-project.iam.gserviceaccount.com" \
+        --role="roles/bigquery.jobUser"
+    ```
+
+---
+
 ## 📈 Learnings & Findings
 
-1. **Hybrid Multi-Agent Parallelism reduces latency**: Distributing discrete BigQuery queries (PII, Retention, Orphans, and RTBF) to parallel specialists reduces Gemini execution times by up to **65%** compared to a single monolithic agent reasoning in a loop.
-2. **Grounded RAG requires multi-tier failovers**: In live production, Vertex AI Search ingestion pipelines can occasionally face API quota limits or document indexing delays. Having a local and GCS in-memory fallback scanning raw PDFs/HTML ensures the auditor is **always grounded** and never hallucinates policy rules.
-3. **Structured prompt calibration is critical for RAG keywords**: calibrating SynthesisAgent instructions to preserve precise compliancy timeline intervals (`30 days`, `7 years`, `10 years`, `tax records`) ensures standard evaluations remain robust even when underlying model temperatures fluctuate.
+1.  **Hybrid Multi-Agent Parallelism reduces latency**: Distributing discrete BigQuery queries (PII, Retention, Orphans, and RTBF) to parallel specialists reduces Gemini execution times by up to **65%** compared to a single monolithic agent reasoning in a loop.
+2.  **Grounded RAG requires multi-tier failovers**: In live production, Vertex AI Search ingestion pipelines can occasionally face API quota limits or document indexing delays. Having a local and GCS in-memory fallback scanning raw PDFs/HTML ensures the auditor is **always grounded** and never hallucinates policy rules.
+3.  **Structured prompt calibration is critical for RAG keywords**: calibrating SynthesisAgent instructions to preserve precise compliancy timeline intervals (`30 days`, `7 years`, `10 years`, `tax records`) ensures standard evaluations remain robust even when underlying model temperatures fluctuate.
+
