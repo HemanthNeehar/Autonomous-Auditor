@@ -259,8 +259,8 @@ To establish secure data pipelines:
 #### Discovery Engine (Vertex AI Search) Permissions:
 If you are running cloud-based RAG queries, the service account assigned to your Cloud Run instance must be granted access to the Discovery Engine (Vertex AI Search) service config:
 ```bash
-gcloud projects add-iam-policy-binding "agent-ops-494011" \
-    --member="serviceAccount:core-orchestrator-sa@agent-ops-494011.iam.gserviceaccount.com" \
+gcloud projects add-iam-policy-binding "your-google-cloud-project-id" \
+    --member="serviceAccount:sa-name@your-google-cloud-project-id.iam.gserviceaccount.com" \
     --role="roles/discoveryengine.viewer"
 ```
 Without this role, the client log will show a `PermissionDenied` error, and the RAG engine will automatically fall back to scanning local policy documents to construct the report.
