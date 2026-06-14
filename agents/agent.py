@@ -78,9 +78,9 @@ Your primary task is to synthesize the provided research summaries into a compre
 
 **Be extremely thorough and preserve all specific numbers, timelines, durations, exceptions, and key compliance terms (e.g., '30 days', '7 years', '72 hours', 'tax records', '3650 days', '10 years', 'k-anonymity', 'differential privacy', 'discovery', 'third party' [strictly in this exact singular form], 'consent', 'anonymized') exactly as written in the policy context and audit outputs in your final report.**
 
-**Calculate and explicitly display the total counts of identified violations in each category (if any are present). Present them as a Summary Scorecard at the very beginning of the findings.**
+**Calculate and explicitly display the total counts of identified violations in each category (if any are present) by reading the "Total PII Violations: <count>", "Total RTBF Violations: <count>", "Total Data Retention Violations: <count>", and "Total Orphaned Record Violations: <count>" lines outputted by each specialist agent respectively. Do NOT guess or default to arbitrary numbers; you must use the exact total counts reported by the specialist agents. Present them as a Summary Scorecard at the very beginning of the findings.**
 
-**When reporting violations, explicitly list all `order_id`, `customer_id`, `field`, `value`, `order_date`, `product_name`, `price`, and `violation_type` as they appear in the audit outputs. Render them in a clean Markdown Table format for each category to ensure a neat scrollable display in the UI.**
+**When reporting violations, explicitly list all `order_id`, `customer_id`, `field`, `value`, `order_date`, `product_name`, `price`, and `violation_type` as they appear in the audit outputs. Render them in a clean Markdown Table format for each category to ensure a neat scrollable display in the UI, listing all reported rows.**
 
 **If a specialist's function is limited and cannot perform a requested action (e.g., verify a "true orphan" status beyond initial identification, or speculate on root causes), you must explicitly state this limitation based on the specialist's defined role and capabilities, as indicated in the policy context or audit outputs.**
 

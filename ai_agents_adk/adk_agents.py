@@ -51,6 +51,11 @@ pii_specialist = Agent(
     You are a PII compliance assistant. Your only job is to find violations of PII rules in the orders database.
     Use find_pii_compliance_violations_tool for performing audit checks.
     Do not ask for confirmation, permission, or additional inputs. Run the tool immediately.
+
+    CRITICAL: In your final response, you MUST:
+    1. Count the exact total number of violations returned by your tool.
+    2. Explicitly output a line stating the count in this exact format: "Total PII Violations: <count>" where <count> is the integer number of violations found (e.g., "Total PII Violations: 34"). If there are none, output "Total PII Violations: 0".
+    3. List EVERY single violation returned by the tool in a markdown table with all details (order_id, customer_id, field, value, violation_type). Do not truncate, summarize, or omit any rows.
     """,
     output_key="pii_violations"
 )
@@ -64,6 +69,11 @@ rtbf_expert = Agent(
     You are a RTBF compliance assistant. Your only job is to find violations of RTBF policy in the orders database.
     **RTBF (Rule 2):** Check for "Right to be Forgotten" violations. First, use `find_customers_by_status_tool` to get all 'forgotten' customers. Then, batch all of their customer IDs together into a single comma-separated string (e.g., "id1,id2,id3") and call the `get_orders_by_customer_id_tool` ONCE with this comma-separated string to retrieve all their orders in a single batch query. This is highly preferred over looping one-by-one.
     Do not ask for confirmation, permission, or additional inputs. Run the tools immediately.
+
+    CRITICAL: In your final response, you MUST:
+    1. Count the exact total number of orders (violations) retrieved for the 'forgotten' customers.
+    2. Explicitly output a line stating the count in this exact format: "Total RTBF Violations: <count>" where <count> is the integer number of violations found (e.g., "Total RTBF Violations: 1"). If there are none, output "Total RTBF Violations: 0".
+    3. List EVERY single violation/order found in a markdown table with all details (customer_id, order_id, violation_type). Do not truncate, summarize, or omit any rows.
     """,
     output_key="rtbf_violations"
 )
@@ -79,6 +89,11 @@ retention_policy_checker = Agent(
     Rule 3.1 specifies that order records older than 3650 days (10 years) must be anonymized.
     Always execute the find_retention_policy_violations_tool with max_age_days=3650.
     Do not ask for confirmation, permission, or additional inputs. Run the tool immediately.
+
+    CRITICAL: In your final response, you MUST:
+    1. Count the exact total number of violations returned by your tool.
+    2. Explicitly output a line stating the count in this exact format: "Total Data Retention Violations: <count>" where <count> is the integer number of violations found (e.g., "Total Data Retention Violations: 5"). If there are none, output "Total Data Retention Violations: 0".
+    3. List EVERY single violation returned by the tool in a markdown table with all details (order_id, customer_id, order_date, violation_type). Do not truncate, summarize, or omit any rows.
     """,
     output_key="retention_policy_violations"
 )
@@ -93,6 +108,11 @@ orphaned_orders_finder = Agent(
     You are an orphaned records compliance assistant. Your only job is to find violations of orphaned records policy in the orders database.
     Use find_orphaned_orders_tool for performing audit checks.    
     Do not ask for confirmation, permission, or additional inputs. Run the tool immediately.
+
+    CRITICAL: In your final response, you MUST:
+    1. Count the exact total number of violations returned by your tool.
+    2. Explicitly output a line stating the count in this exact format: "Total Orphaned Record Violations: <count>" where <count> is the integer number of violations found (e.g., "Total Orphaned Record Violations: 2"). If there are none, output "Total Orphaned Record Violations: 0".
+    3. List EVERY single violation returned by the tool in a markdown table with all details (order_id, customer_id, violation_type). Do not truncate, summarize, or omit any rows.
     """,
     output_key="orphaned_orders"
 )
