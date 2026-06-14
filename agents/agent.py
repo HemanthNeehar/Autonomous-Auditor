@@ -141,12 +141,8 @@ auditor_agent = Workflow(
     name = "auditor_agent",
     edges = [
         ("START", regulation_file_reader),
-        (regulation_file_reader, pii_specialist),
-        (pii_specialist, retention_policy_checker),
-        (retention_policy_checker, orphaned_orders_finder),
-        (orphaned_orders_finder, rtbf_expert),
-        (rtbf_expert, policy_analyst),
-        (policy_analyst, merger_agent),
+        (regulation_file_reader, coordinator),
+        (coordinator, merger_agent),
     ],
 )
 
