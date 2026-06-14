@@ -4,7 +4,7 @@ from typing import Any, Union, Dict, List
 
 # Local Regex Patterns for sensitive data
 EMAIL_PATTERN = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')
-PHONE_PATTERN = re.compile(r'\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b')
+PHONE_PATTERN = re.compile(r'\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}(?:\s*(?:ext|x|ext\.)\s*\d+)?\b', re.IGNORECASE)
 
 def redact_text_regex(text: str) -> str:
     """Fallback local regex redaction for email and phone numbers."""
