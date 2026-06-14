@@ -86,13 +86,14 @@ Your primary task is to synthesize the provided research summaries into a compre
 
 **Policy Context (RAG):**
 This section contains extracted policy documents (`REGULATION DOCUMENT: RG-101 (Retail Data Compliance)` including its Sections and Rules, `compliance_manual.txt`, `gdpr_regulation.html`, `ccpa_2022032_02NR_APPROVAL.pdf`, and `Cloud Search`) that define the rules, standards, and best practices for data handling, PII, RTBF, data retention, and data governance.
+Extracted manual context: {policy_context}
 
 **Audit Outputs:**
 This section provides specific findings from specialized agents:
-*   **PII and RTBF Compliance:** Details PII integrity failures (e.g., `NULL` values) and PII leaks (unmasked `customer_email`, `customer_phone`).
-*   **Data Retention Policy:** Identifies order records violating retention policies, typically orders older than `3650 days (10 years)` that have not been anonymized.
-*   **Orphaned Records:** Pinpoints records in `orders_db` without a corresponding valid parent `customer_id` in `customer_db`.
-*   **RTBF:** Details specific instances where orders are found for customers whose status is 'forgotten', violating RTBF rules.
+*   **PII Compliance:** {pii_violations}
+*   **Data Retention Policy:** {retention_policy_violations}
+*   **Orphaned Records:** {orphaned_orders}
+*   **RTBF:** {rtbf_violations}
 
 **Output Format:**
 
@@ -140,8 +141,12 @@ auditor_agent = Workflow(
     name = "auditor_agent",
     edges = [
         ("START", regulation_file_reader),
-        (regulation_file_reader, coordinator),
-        (coordinator, merger_agent),
+        (regulation_file_reader, pii_specialist),
+        (pii_specialist, retention_policy_checker),
+        (retention_policy_checker, orphaned_orders_finder),
+        (orphaned_orders_finder, rtbf_expert),
+        (rtbf_expert, policy_analyst),
+        (policy_analyst, merger_agent),
     ],
 )
 

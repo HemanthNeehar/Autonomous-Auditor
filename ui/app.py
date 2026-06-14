@@ -522,18 +522,20 @@ async def run_agent_audit():
                                     }
                                 )
                                 # Brief yield to keep the event loop responsive
-                                await asyncio.sleep(5)
+                                await asyncio.sleep(0.1)
 
                             # Plain text — model reasoning or final narrative
                             elif part.text and part.text.strip():
                                 text = part.text.strip()
                                 yield _sse({"type": "thought", "content": text})
-                                final_text = text
 
-                    # ── Turn complete — mark final report ───────────────────
-                    if event.is_final_response():
-                        yield _sse({"type": "final_report", "content": final_text})
+                    # ── Accumulate fully constructed turn text on completion ───────────────────
+                    if event.is_final_response() and event.content and event.content.parts:
+                        final_text = "".join(
+                            p.text for p in event.content.parts if hasattr(p, "text") and p.text
+                        )
 
+                yield _sse({"type": "final_report", "content": final_text})
                 yield "data: [DONE]\n\n"
             else:
                 # --- REMOTE MODE (GCP Agent Engine) ---
