@@ -315,8 +315,13 @@ async def bq_download():
         ord_query = f"SELECT * FROM `{project_id}.{dataset_id}.{order_table}`"
         ord_rows = [dict(row) for row in client.query(ord_query).result()]
 
-        # Serialize datetime fields to string format in orders
+        # Serialize datetime fields to string format in customers and orders
         from datetime import date, datetime
+
+        for c in cust_rows:
+            for k, v in c.items():
+                if isinstance(v, (datetime, date)):
+                    c[k] = v.isoformat()
 
         for o in ord_rows:
             for k, v in o.items():

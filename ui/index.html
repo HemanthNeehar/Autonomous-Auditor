@@ -392,13 +392,27 @@ async function runAgentAudit() {
   const prog = document.getElementById('prog-agent');
   btn.classList.add('running');
   prog.style.width = '5%';
-  setStatus('Agent is orchestrating...');
+  setStatus('Agent audit still running...');
   
   // Clear previous outputs
   document.getElementById('agent-log').innerHTML = '';
-  document.getElementById('results-grid').classList.add('hidden');
   document.getElementById('summary-bar').classList.add('hidden');
   document.getElementById('violations-panel').classList.add('hidden');
+  
+  // Show a "Running" placeholder in the results grid
+  const grid = document.getElementById('results-grid');
+  grid.classList.remove('hidden');
+  grid.innerHTML = `
+    <div class="result-card running" style="grid-column: 1 / -1; padding: 25px; border-color: var(--accent); background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(99,102,241,0.05));">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+        <div class="status-dot pulse" style="background:var(--accent); width:10px; height:10px; border-radius:50%; box-shadow:0 0 10px var(--accent)"></div>
+        <strong style="color:var(--text-primary); font-size:16px;">Agent Audit Still Running</strong>
+      </div>
+      <p style="margin:0; font-size:13px; color:var(--text-muted); line-height:1.5;">
+        The coordinator is executing specialist sub-agents (PII Specialist, RTBF Expert, Retention Policy Checker, and Orphaned Orders Finder) in parallel. They are auditing the databases, validating active compliance rules against the regulation manual, and retrieving contextual policies. The final synthesized scorecard and violation tables will be generated here shortly.
+      </p>
+    </div>
+  `;
   
   log('SYS', 'Initializing LLM Agent Orchestrator via SSE...', 'action');
 
