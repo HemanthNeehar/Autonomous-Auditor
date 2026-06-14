@@ -1,0 +1,18 @@
+steps:
+  # Deploy to Cloud Run using Google Cloud Source Deploy (automatically builds and registers the image)
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'autonomous-auditor'
+      - '--source'
+      - '.'
+      - '--region'
+      - 'us-central1'
+      - '--allow-unauthenticated'
+      - '--set-env-vars'
+      - 'DB_MODE=local,GOOGLE_GENAI_USE_VERTEXAI=TRUE'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
