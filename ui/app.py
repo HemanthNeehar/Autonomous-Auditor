@@ -238,13 +238,17 @@ async def get_orders(limit: int = 100):
 @app.get("/api/data/customers/download")
 async def download_customers():
     """Download the full customer_db.json file."""
-    return FileResponse(SRC_DIR / "customer_db.json", media_type="application/json", filename="customer_db.json")
+    return FileResponse(
+        SRC_DIR / "customer_db.json", media_type="application/json", filename="customer_db.json"
+    )
 
 
 @app.get("/api/data/orders/download")
 async def download_orders():
     """Download the full orders_db.json file."""
-    return FileResponse(SRC_DIR / "orders_db.json", media_type="application/json", filename="orders_db.json")
+    return FileResponse(
+        SRC_DIR / "orders_db.json", media_type="application/json", filename="orders_db.json"
+    )
 
 
 @app.post("/api/data/generate")
@@ -254,19 +258,19 @@ async def generate_scenario_data(payload: GenerateScenarioRequest):
     overwrite local customer_db.json and orders_db.json, and call load_data().
     """
     from data.generate_golden_sets import golden_set_scenarios, generate_and_save_scenario
-    
+
     scenario = payload.scenario.strip()
     if scenario not in golden_set_scenarios:
         raise HTTPException(
             status_code=400,
-            detail=f"Unknown scenario '{scenario}'. Available scenarios: {list(golden_set_scenarios.keys())}"
+            detail=f"Unknown scenario '{scenario}'. Available scenarios: {list(golden_set_scenarios.keys())}",
         )
-    
+
     config = golden_set_scenarios[scenario]
-    upload_bq = (os.getenv("DB_MODE", "local") != "local")
+    upload_bq = os.getenv("DB_MODE", "local") != "local"
     custom_customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers") if upload_bq else None
     custom_order_table = os.getenv("AUDIT_ORDER_TABLE", "orders") if upload_bq else None
-    
+
     loop = asyncio.get_event_loop()
     success_bq = await loop.run_in_executor(
         _executor,
@@ -276,17 +280,17 @@ async def generate_scenario_data(payload: GenerateScenarioRequest):
         SRC_DIR,
         upload_bq,
         custom_customer_table,
-        custom_order_table
+        custom_order_table,
     )
-    
+
     load_data()
-    
+
     return {
         "status": "ok",
         "scenario": scenario,
         "customers_count": len(CUSTOMER_DB),
         "orders_count": len(ORDER_DB),
-        "bq_sync": success_bq if upload_bq else False
+        "bq_sync": success_bq if upload_bq else False,
     }
 
 
@@ -294,35 +298,37 @@ async def generate_scenario_data(payload: GenerateScenarioRequest):
 async def bq_download():
     """Fetch customer and order records from BigQuery and save them locally."""
     from google.cloud import bigquery
-    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "agent-ops-494011")
+
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "your-google-cloud-project-id")
     dataset_id = os.getenv("BQ_DATASET", "retail_audit_db")
     customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
     order_table = os.getenv("AUDIT_ORDER_TABLE", "orders")
 
     def _download():
         client = bigquery.Client(project=project_id)
-        
+
         # Download customers
         cust_query = f"SELECT * FROM `{project_id}.{dataset_id}.{customer_table}`"
         cust_rows = [dict(row) for row in client.query(cust_query).result()]
-        
+
         # Download orders
         ord_query = f"SELECT * FROM `{project_id}.{dataset_id}.{order_table}`"
         ord_rows = [dict(row) for row in client.query(ord_query).result()]
-        
+
         # Serialize datetime fields to string format in orders
         from datetime import date, datetime
+
         for o in ord_rows:
             for k, v in o.items():
                 if isinstance(v, (datetime, date)):
                     o[k] = v.isoformat()
-                    
+
         # Save locally
         with open(SRC_DIR / "customer_db.json", "w") as f:
             json.dump(cust_rows, f, indent=2)
         with open(SRC_DIR / "orders_db.json", "w") as f:
             json.dump(ord_rows, f, indent=2)
-            
+
         return len(cust_rows), len(ord_rows)
 
     try:
@@ -333,12 +339,12 @@ async def bq_download():
             "status": "ok",
             "customers_count": c_count,
             "orders_count": o_count,
-            "message": "Successfully downloaded and synchronized data from BigQuery."
+            "message": "Successfully downloaded and synchronized data from BigQuery.",
         }
     except Exception as e:
         raise HTTPException(
             status_code=500,
-            detail=f"BigQuery download failed: {str(e)}. Please check your GCP credentials and table configuration."
+            detail=f"BigQuery download failed: {str(e)}. Please check your GCP credentials and table configuration.",
         )
 
 
@@ -346,34 +352,35 @@ async def bq_download():
 async def bq_upload():
     """Upload local customer_db.json and orders_db.json back to BigQuery."""
     from google.cloud import bigquery
-    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "agent-ops-494011")
+
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT", "your-google-cloud-project-id")
     dataset_id = os.getenv("BQ_DATASET", "retail_audit_db")
     customer_table = os.getenv("AUDIT_CUSTOMER_TABLE", "customers")
     order_table = os.getenv("AUDIT_ORDER_TABLE", "orders")
 
     def _upload():
         client = bigquery.Client(project=project_id)
-        
+
         # Read local JSONs
         with open(SRC_DIR / "customer_db.json") as f:
             customers = json.load(f)
         with open(SRC_DIR / "orders_db.json") as f:
             orders = json.load(f)
-            
+
         job_config = bigquery.LoadJobConfig(
             write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
         )
-        
+
         # Upload customers
         cust_ref = client.dataset(dataset_id).table(customer_table)
         cust_job = client.load_table_from_json(customers, cust_ref, job_config=job_config)
         cust_job.result()
-        
+
         # Upload orders
         ord_ref = client.dataset(dataset_id).table(order_table)
         ord_job = client.load_table_from_json(orders, ord_ref, job_config=job_config)
         ord_job.result()
-        
+
         return len(customers), len(orders)
 
     try:
@@ -383,12 +390,12 @@ async def bq_upload():
             "status": "ok",
             "customers_count": c_count,
             "orders_count": o_count,
-            "message": "Successfully uploaded local database records to BigQuery."
+            "message": "Successfully uploaded local database records to BigQuery.",
         }
     except Exception as e:
         raise HTTPException(
             status_code=500,
-            detail=f"BigQuery upload failed: {str(e)}. Please verify table write permissions and GCP environment settings."
+            detail=f"BigQuery upload failed: {str(e)}. Please verify table write permissions and GCP environment settings.",
         )
 
 
@@ -396,34 +403,35 @@ async def bq_upload():
 async def upload_local_file(type: str, file: UploadFile = File(...)):
     """Upload customer or order database JSON file from the user's local machine."""
     if type not in ("customers", "orders"):
-        raise HTTPException(status_code=400, detail="Invalid data type. Must be 'customers' or 'orders'.")
-        
+        raise HTTPException(
+            status_code=400, detail="Invalid data type. Must be 'customers' or 'orders'."
+        )
+
     filename = "customer_db.json" if type == "customers" else "orders_db.json"
     target_path = SRC_DIR / filename
-    
+
     try:
         content = await file.read()
         # Validate that it is proper JSON
         parsed_json = json.loads(content.decode("utf-8"))
         if not isinstance(parsed_json, list):
             raise ValueError("JSON content must be a list of records.")
-            
+
         # Write to local file
         with open(target_path, "w", encoding="utf-8") as f:
             json.dump(parsed_json, f, indent=2)
-            
+
         load_data()
-        
+
         return {
             "status": "ok",
             "type": type,
             "records_count": len(parsed_json),
-            "message": f"Successfully uploaded and loaded {filename}."
+            "message": f"Successfully uploaded and loaded {filename}.",
         }
     except Exception as e:
         raise HTTPException(
-            status_code=400,
-            detail=f"Failed to process uploaded JSON file: {str(e)}"
+            status_code=400, detail=f"Failed to process uploaded JSON file: {str(e)}"
         )
 
 
@@ -547,17 +555,21 @@ async def run_agent_audit():
                             ):
                                 loop.call_soon_threadsafe(queue.put_nowait, chunk)
                         elif hasattr(remote_agent, "query"):
-                            print("[UI] stream_query not found on remote_agent. Falling back to query().")
+                            print(
+                                "[UI] stream_query not found on remote_agent. Falling back to query()."
+                            )
                             # Put a thought update on the queue to inform the user
                             loop.call_soon_threadsafe(
                                 queue.put_nowait,
-                                "🔄 Contacting Remote Agent Engine (this may take up to a minute)..."
+                                "🔄 Contacting Remote Agent Engine (this may take up to a minute)...",
                             )
                             # Call the standard query method exposed by PlaygroundCompatibleA2aAgent
                             res = remote_agent.query(input=AUDIT_PROMPT)
                             loop.call_soon_threadsafe(queue.put_nowait, res)
                         else:
-                            raise AttributeError("Remote agent has neither 'stream_query' nor 'query' methods.")
+                            raise AttributeError(
+                                "Remote agent has neither 'stream_query' nor 'query' methods."
+                            )
                     except Exception as stream_err:
                         loop.call_soon_threadsafe(queue.put_nowait, {"_error": str(stream_err)})
                     finally:
